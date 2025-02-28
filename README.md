@@ -8,5 +8,5 @@
 
 OpenFly is an innovative platform designed to advance research in outdoor aerial Vision-Language Navigation (VLN) by providing a highly automated toolchain for data collection and a large-scale benchmark dataset. It includes 100k diverse flight trajectories, high-quality visual data generated using cutting-edge rendering techniques, and OpenFly-Agent, a keyframe-aware VLN model, all of which will be open-sourced to support the community.
 
-
+![cover](images/cover.png)
 ### Code coming soon!
