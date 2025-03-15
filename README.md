@@ -10,7 +10,7 @@ OpenFly is an innovative platform designed to advance research in outdoor aerial
 ### Code coming soon!
 
 # Dataset
-The dataset is being uploaded to Huggingface and Opendatalab, which will take some time. The Opendatalab dataset will be uploaded around this week (3.16). HuggingFace has a slower upload speed and still needs some time, please understand.😭
+The dataset has been uploaded to Huggingface and opendatalab. If you are downloading in China, you can consider using Huggingface mirror and opendatalab.
 
-[![HuggingFace](https://img.shields.io/badge/Dataset-Huggingface-F8D44D.svg)]()
-[![OpenDataLab](https://img.shields.io/badge/Dataset-OpenDataLab-4E44D4.svg)]()
+[![HuggingFace](https://img.shields.io/badge/Dataset-Huggingface-F8D44D.svg)](https://huggingface.co/datasets/IPEC-COMMUNITY/OpenFly)
+[![OpenDataLab](https://img.shields.io/badge/Dataset-OpenDataLab-4E44D4.svg)](https://openxlab.org.cn/datasets/liujunli_1/OpenFly)
