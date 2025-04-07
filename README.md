@@ -262,7 +262,11 @@ The training script are [`train/train.sh`](./train/train.sh). And you need to ch
 
 Other hyperparameters like "batch_size", "save_steps" could be customized according to your computation resources.
 
-## Evaluation
+## Evaluation 
+
+You can refer to our evaluation script scripts/sim/eval.py to evaluate your openfly-agent.
+
+## Test
 
 Make sure your trained checkpoint dir has two files: "data_statistics.json". If not, please copy them from downloaded openfly-agent weights or this [link](https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-fractal).
 
