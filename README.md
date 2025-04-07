@@ -172,6 +172,7 @@ colcon build --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
     GTAV(Coming soon)
 
 4. instruction generation: 
+
     Our OpenFly dataset has been converted to parquet format. If you want to use this code, you need to convert parquet back to uncompressed format. So we recommend that you use this code to generate your own trajectory instructions.
     You need to prepare: 1. OpenAI's API  2. Traj in the same format as the OpenFly dataset (a series of images and a jsonl file that records actions)
     * When using GPT to generate instructions, first configure the "key" and "model" in the [`/OpenFly-Platform/tool_ws/src/ins_gen/gpt_api_config.json`](./tool_ws/src/ins_gen/gpt_api_config.json) file, modify the data directory in [`/OpenFly-Platform/tool_ws/src/ins_gen/gpt_generation.py`](./tool_ws/src/ins_gen/gpt_generation.py). And use a json file to store all the traj directories you want to generate instructions
