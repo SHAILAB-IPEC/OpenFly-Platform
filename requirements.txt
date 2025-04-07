@@ -11,3 +11,5 @@ requests
 pandas
 
 aiofiles
+scipy
+importlib_metadata
