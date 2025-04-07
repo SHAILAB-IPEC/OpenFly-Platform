@@ -1,0 +1,32 @@
+datagen:
+  env:                        "env_gs_ecust"
+  data_type:                  "long"
+  freq:                       2
+
+traj_map:
+  DilateRadius:               3
+  VoxelWidth:                 1.5
+  MapBound:                   [-1000, 500, -600, 800, -100, 100]
+  LidarDelta:                 [30, 30, 50]
+  pcd_scale_ratio:            5.6  
+  traj_scale_ratio:           1  
+  map_elevation:              -50
+  min_height_thresh:          6
+
+seg_map:
+  bev_voxel_size:             5
+
+thread_params:
+  - name: "thread_1"
+    nums: 5000
+    min_dis: 50
+    max_dis: 80
+    height_min: 60
+    height_max: 70
+    aim_port: 9999
+    listen_port: 9998
+    sim_ip: "127.0.0.1"
+    sim_port: 9000
+    aimlandmark_nums: 2
+    add_takeoff_land: false
+    with_turn: false

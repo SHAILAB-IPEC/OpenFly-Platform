@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>traj_gen</name>
+  <version>0.0.0</version>
+  <description>The ue_dage_gen package for ROS2.</description>
+
+  <!-- Maintainer information -->
+  <maintainer email="kermit@todo.todo">kermit</maintainer>
+
+  <!-- License information -->
+  <license>Apache-2.0</license>
+
+  <!-- Dependencies for building and running the package -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>airsim_ros_pkgs</build_depend>
+
+  <!-- Execution dependencies -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>airsim_ros_pkgs</exec_depend>
+  <exec_depend>pcl_ros</exec_depend>
+
+  <!-- Test dependencies (optional) -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- Export build type -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

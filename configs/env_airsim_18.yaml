@@ -1,0 +1,32 @@
+datagen:
+  env:                        "env_airsim_18"
+  data_type:                  "test"
+  freq:                       2   
+
+traj_map:
+  DilateRadius:               3
+  VoxelWidth:                 1.5
+  MapBound:                   [-1000, 2000, -1000, 1500, -100, 100]
+  LidarDelta:                 [30, 30, 50]
+  pcd_scale_ratio:            1
+  traj_scale_ratio:           1
+  map_elevation:              -48
+  min_height_thresh:          6
+
+seg_map:
+  bev_voxel_size:             4.0
+
+thread_params:
+  - name: "thread_1"
+    nums: 1000
+    min_dis: 150
+    max_dis: 180
+    height_min: 20
+    height_max: 50
+    aim_port: 9999
+    listen_port: 9998
+    sim_ip: "127.0.0.1"
+    sim_port: 9000
+    aimlandmark_nums: 1
+    add_takeoff_land: true
+    with_turn: true

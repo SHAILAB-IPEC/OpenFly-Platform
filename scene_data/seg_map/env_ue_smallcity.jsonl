@@ -1,0 +1,610 @@
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "grid-like window pattern", "filename": "X=-7986.052Y=-56308.875Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "columns and grid-like window pattern", "filename": "X=-6471.368Y=-51927.043Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate roofline", "filename": "X=-67325.453Y=9507.553Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "striped windows", "filename": "X=-9163.408Y=12508.139Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-12994.779Y=34084.669Z=1320.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-23462.664Y=39227.520Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the top floor", "filename": "X=-22729.736Y=-3062.354Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate facade with arched windows and decorative cornices", "filename": "X=-14992.758Y=3856.350Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the top, ornate cornice", "filename": "X=-20853.270Y=9990.665Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-14965.234Y=2669.580Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate top", "filename": "X=-18875.277Y=-6562.814Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate cornice", "filename": "X=-17961.840Y=-3159.400Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornices", "filename": "X=-17979.670Y=5081.928Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=-19767.963Y=1395.115Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "many windows, decorative cornice", "filename": "X=-23300.707Y=-12662.281Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-23066.934Y=-55140.723Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the top", "filename": "X=-19750.131Y=-6532.671Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "windows", "filename": "X=6934.493Y=53771.137Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate windows and intricate architectural details near the roof", "filename": "X=-22750.164Y=4997.531Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "modern glass facade on top of a classical stone base", "filename": "X=7151.518Y=-13457.615Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "uniform windows", "filename": "X=0.000Y=0.000Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "striped pattern on exterior walls", "filename": "X=-21223.070Y=-44051.047Z=0.png"}
+{"type": "building", "color": "pink", "size": "high-rise", "shape": "rectangular", "feature": "decorative details on upper floors", "filename": "X=-17624.246Y=-57035.277Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "grid-pattern windows", "filename": "X=-5560.111Y=20182.047Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at ground floor, vertical stripes", "filename": "X=-12994.779Y=34084.669Z=1320.000.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-15269.597Y=-12741.023Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-16856.750Y=-3027.962Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-17354.697Y=1559.807Z=0.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "decorative roof pattern with small statues", "filename": "X=-16308.020Y=39823.359Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "numerous windows", "filename": "X=-25256.467Y=47689.129Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-14952.408Y=1333.499Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "grid windows", "filename": "X=-15266.075Y=-57016.648Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate fa\u00e7ade", "filename": "X=-22766.676Y=-2349.454Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows near the top, green cornice, decorative facade", "filename": "X=-15009.450Y=-5594.827Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows and decorative elements", "filename": "X=-14959.928Y=4997.530Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "windows in a grid pattern", "filename": "X=-4361.264Y=-6015.481Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-27122.260Y=46624.523Z=0.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "windows", "filename": "X=29155.676Y=-35157.180Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=-22766.676Y=754.559Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornamental facade", "filename": "X=-22769.363Y=1730.112Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative arches on top floor", "filename": "X=-20873.053Y=4975.645Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate fa\u00e7ade with arched windows and decorative elements", "filename": "X=-22798.133Y=-4052.223Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-17961.840Y=-6322.755Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "decorative roofline", "filename": "X=23985.074Y=-19323.650Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "arched ornamental details", "filename": "X=-14963.129Y=-2349.453Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "decorative facade", "filename": "X=-15818.934Y=12507.574Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate decorations around windows", "filename": "X=-20873.053Y=1231.446Z=0.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "modern windows", "filename": "X=-2721.181Y=-20595.201Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "lots of windows", "filename": "X=-14566.959Y=23731.582Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative window arches", "filename": "X=-14941.122Y=-4052.222Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-20517.879Y=-13476.438Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornices", "filename": "X=-20375.107Y=-3371.772Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on top floor", "filename": "X=-16856.750Y=-6431.935Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate window frames", "filename": "X=-22824.535Y=3856.352Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-18854.523Y=5157.833Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-19767.961Y=4968.381Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade with a grid pattern", "filename": "X=15555.627Y=45729.188Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular with a central tower and two smaller wings", "feature": "many windows arranged in a grid pattern", "filename": "X=-16071.292Y=-37277.387Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "grid-like window pattern", "filename": "X=-16071.301Y=-53816.332Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "grid-patterned windows", "filename": "X=-16071.300Y=-45603.035Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-22766.672Y=5886.776Z=0.png"}
+{"type": "building", "color": "grey", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-35706.449Y=27841.678Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "grid-like facade", "filename": "X=36727.695Y=20149.496Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched entrance, large windows", "filename": "X=-21658.494Y=12507.100Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "vertical windows", "filename": "X=-20488.773Y=-11321.919Z=0.png"}
+{"type": "building", "color": "dark", "size": "mid-rise", "shape": "rectangular", "feature": "grid-like facade", "filename": "X=-15818.932Y=10009.362Z=0.png"}
+{"type": "building", "color": "pink", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-18875.277Y=-3065.100Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-22766.674Y=-7049.819Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative facade with numerous arched windows", "filename": "X=-16884.955Y=5027.061Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate windows and cornice", "filename": "X=-18854.525Y=1331.407Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on upper floors, flat roof", "filename": "X=-22758.152Y=-5594.828Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "grid-patterned windows", "filename": "X=-18612.527Y=10858.467Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=-22822.129Y=2669.582Z=0.png"}
+{"type": "building", "color": "cream", "size": "high-rise", "shape": "rectangular", "feature": "ornate facade with vertical window arrangement", "filename": "X=-20273.336Y=-55115.953Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative elements", "filename": "X=-14963.127Y=5886.776Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "large windows, detailed cornice", "filename": "X=-17136.430Y=31693.480Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-14963.129Y=-7049.817Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-21191.475Y=40480.277Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "multiple windows", "filename": "X=-25286.178Y=33922.688Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "columns", "filename": "X=-5581.806Y=-44376.598Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative elements", "filename": "X=-27207.715Y=33495.438Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "classical facade with arches and decorative elements", "filename": "X=-18377.713Y=43408.168Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with large windows", "filename": "X=-25144.736Y=44673.996Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "decorative top cornice", "filename": "X=-27744.982Y=38284.930Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate top", "filename": "X=-26206.488Y=23882.326Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-29638.689Y=37006.914Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangle", "feature": "many windows", "filename": "X=-29824.396Y=32240.900Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "multiple windows", "filename": "X=-28629.666Y=28079.379Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "large windows and detailed architectural elements at lower floors", "filename": "X=-10339.784Y=-52094.977Z=0.png"}
+{"type": "building", "color": "light brown", "size": "high-rise", "shape": "rectangular", "feature": "many windows, ornate top", "filename": "X=-1896.190Y=-36354.055Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "vertical windows", "filename": "X=-11348.895Y=44700.062Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative cornice", "filename": "X=-31976.209Y=35967.949Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "decorative architectural details near the roof", "filename": "X=-30999.518Y=36486.449Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "window grid", "filename": "X=-3359.307Y=5222.960Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "tiered rectangular", "feature": "arched lower windows", "filename": "X=-9841.378Y=-48040.418Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows and decorative elements", "filename": "X=-32954.020Y=33944.746Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-29800.045Y=-37971.359Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "decorative elements at the top", "filename": "X=-26195.141Y=35604.180Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-46410.066Y=-46808.230Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-25775.414Y=34804.145Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows near the top", "filename": "X=-31582.227Y=31451.580Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative columns", "filename": "X=-29159.789Y=-2912.189Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-30228.205Y=-14156.112Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-31058.002Y=30590.326Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "vertical windows", "filename": "X=-24626.043Y=30309.631Z=0.png"}
+{"type": "building", "color": "pink", "size": "mid-rise", "shape": "rectangular", "feature": "decorative details", "filename": "X=-35236.973Y=-12741.024Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "combination of modern glass facade and ornate lower floors", "filename": "X=-17272.705Y=41471.602Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "tiered rectangular", "feature": "grid pattern windows, waterfront location", "filename": "X=3418.156Y=57287.469Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-34438.273Y=40587.941Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "decorative facade", "filename": "X=-34724.785Y=-58095.863Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-53690.910Y=-36212.430Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "detailed cornice", "filename": "X=-32241.367Y=32621.334Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "columns", "filename": "X=5079.069Y=2504.219Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "grid-pattern windows", "filename": "X=-32057.145Y=-19231.309Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-27570.904Y=-12741.024Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "ornate top section", "filename": "X=-36092.156Y=-54859.387Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-28393.848Y=-5763.757Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with numerous windows", "filename": "X=-28397.201Y=-19231.307Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-33184.031Y=6074.583Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "multiple glass windows", "filename": "X=-31988.660Y=43828.984Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "ornate cornice", "filename": "X=-26663.598Y=36329.070Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-27166.830Y=37285.984Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "multiple glass windows", "filename": "X=-32863.176Y=15585.631Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "glass facade on upper floors", "filename": "X=-27462.992Y=26178.412Z=0.png"}
+{"type": "building", "color": "red", "size": "high-rise", "shape": "rectangular with stepped levels", "feature": "brick exterior", "filename": "X=24698.900Y=27816.876Z=645.000.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-38031.477Y=31803.391Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "ornate", "filename": "X=-29573.969Y=-46930.742Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows at ground level", "filename": "X=-30228.207Y=-12039.302Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-36212.637Y=28706.457Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "multiple large windows", "filename": "X=-35612.957Y=15508.358Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-37044.336Y=30305.535Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-30640.320Y=-19231.309Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative exterior with large windows", "filename": "X=-35814.105Y=-4092.248Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "grid-like facade", "filename": "X=57800.941Y=28261.150Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "grid-like windows", "filename": "X=-8711.078Y=3970.469Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "decorative upper facade", "filename": "X=-38433.578Y=27270.416Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "decorative window arches", "filename": "X=-27964.100Y=33055.828Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "ornate top floor", "filename": "X=-30607.715Y=-56676.332Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornices and large windows", "filename": "X=-30636.969Y=-5735.946Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-31433.133Y=19261.660Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "ornate detailing on the facade", "filename": "X=-36593.770Y=39366.176Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-32993.859Y=-12741.024Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "grid-like windows", "filename": "X=-27853.135Y=-56716.570Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-30647.635Y=8810.371Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-34714.445Y=-19231.309Z=0.png"}
+{"type": "building", "color": "black", "size": "low-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-30171.713Y=17005.535Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "multiple windows and decorative elements", "filename": "X=-38537.309Y=32744.873Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on the lower floors", "filename": "X=-34060.199Y=-6943.816Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "grid-like pattern on the facade", "filename": "X=-29671.250Y=-53516.258Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate windows and cornices", "filename": "X=-37986.090Y=14280.418Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "tapered rectangular", "feature": "stepped setbacks", "filename": "X=6871.875Y=21210.352Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with arched windows", "filename": "X=-34070.008Y=17840.541Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=-30648.654Y=41496.395Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-28223.605Y=39010.453Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "brick facade with arched windows", "filename": "X=-33738.547Y=35233.168Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-47563.488Y=21478.723Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "grid-like glass facade", "filename": "X=-47963.820Y=14883.854Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-33753.227Y=22717.086Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "arch entrance", "filename": "X=-9163.405Y=-39408.613Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows with decorative elements", "filename": "X=-28756.812Y=32601.975Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "windows with arched tops along the upper floors, green trim at the top", "filename": "X=-49318.566Y=20731.365Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "striped windows", "filename": "X=-23769.514Y=28844.201Z=0.png"}
+{"type": "building", "color": "grey", "size": "low-rise", "shape": "rectangular", "feature": "glass windows in the upper floors", "filename": "X=-42360.395Y=3723.863Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "columns and decorative window frames", "filename": "X=-10295.503Y=-56433.391Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=-39953.172Y=26167.334Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-44651.094Y=25603.283Z=0.png"}
+{"type": "building", "color": "grey", "size": "high-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-43174.645Y=34744.203Z=0.png"}
+{"type": "building", "color": "dark", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-47431.879Y=1225.981Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "architectural details around windows and roof", "filename": "X=-43370.754Y=23416.689Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "brick texture", "filename": "X=-44319.980Y=28848.037Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "grid-like window pattern", "filename": "X=35939.961Y=-13036.114Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-40181.129Y=35571.301Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-41088.602Y=37232.184Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "ornate details on the top edges", "filename": "X=-46252.598Y=-37277.391Z=0.png"}
+{"type": "building", "color": "light", "size": "high-rise", "shape": "rectangular", "feature": "grid windows", "filename": "X=-41644.719Y=-51553.277Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on upper floors", "filename": "X=-1623.957Y=10859.318Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-64443.910Y=145.003Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-44604.301Y=37245.234Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-42182.629Y=25146.033Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular with stepped levels", "feature": "many windows", "filename": "X=-21223.064Y=-37277.391Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at top floor", "filename": "X=-45407.848Y=36810.348Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-43300.480Y=10287.210Z=0.png"}
+{"type": "building", "color": "tan", "size": "high-rise", "shape": "rectangular", "feature": "grid of windows", "filename": "X=68410.367Y=6595.936Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-51448.418Y=24420.387Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows, decorative elements", "filename": "X=-46933.547Y=-11292.158Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-9565.405Y=-6707.689Z=0.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "decorative elements around windows", "filename": "X=-47855.047Y=31162.816Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "multiple windows", "filename": "X=-36195.570Y=5589.013Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-42560.926Y=29838.320Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-43866.137Y=24287.709Z=0.png"}
+{"type": "building", "color": "red", "size": "high-rise", "shape": "rectangular", "feature": "detailed facade with regular window patterns", "filename": "X=-6692.377Y=-5033.059Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "decorative arches and vertical lines", "filename": "X=-45142.738Y=-19231.311Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=-45552.016Y=27107.166Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-45001.207Y=-801.666Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows near the top", "filename": "X=-49740.492Y=25320.867Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "detailed windows and cornices", "filename": "X=-48894.242Y=23829.910Z=0.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "grid-like pattern on the upper floors", "filename": "X=-46933.543Y=-13487.303Z=0.png"}
+{"type": "building", "color": "tan", "size": "low-rise", "shape": "rectangular", "feature": "many windows, ornate roofline", "filename": "X=-41096.707Y=25475.348Z=0.png"}
+{"type": "building", "color": "red and gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=-39073.059Y=3999.106Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-41969.816Y=38802.727Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows on upper floors", "filename": "X=-43733.270Y=808.585Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate roof and multiple windows", "filename": "X=-40816.922Y=30663.049Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with columns", "filename": "X=-41731.227Y=-4088.453Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "numerous windows and balcony-like structures on lower floors", "filename": "X=-47477.406Y=-19231.311Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "ornate spires and detailed facades", "filename": "X=4092.464Y=-19231.309Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "historic facade with intricate architectural details", "filename": "X=-40411.469Y=20189.869Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-46201.613Y=28319.885Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-46982.543Y=35801.930Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-50132.805Y=35127.012Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "numerous windows", "filename": "X=-50233.328Y=26103.027Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with large arched entrance", "filename": "X=-77715.828Y=17602.525Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at ground floor", "filename": "X=-41451.359Y=-45875.961Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on the ground floor", "filename": "X=-44606.062Y=-4846.505Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate details with recessed windows and spires on top", "filename": "X=-40358.453Y=-12741.024Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-44167.781Y=-12741.024Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate cornice", "filename": "X=-49601.969Y=34129.891Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "ornate architectural details with large windows", "filename": "X=-46976.379Y=-1789.255Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "decorative facade", "filename": "X=-40902.324Y=-19231.311Z=0.png"}
+{"type": "building", "color": "black", "size": "low-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-45326.781Y=16251.676Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative balconies", "filename": "X=-43837.383Y=34063.133Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "columns", "filename": "X=-60252.832Y=7224.712Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "ornamental facade", "filename": "X=-48794.320Y=32827.434Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-63220.402Y=17592.670Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "modern design with multiple dark window stripes", "filename": "X=-44378.730Y=12403.087Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "brick exterior", "filename": "X=-45623.188Y=33423.469Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-38531.230Y=17977.104Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-48273.320Y=22818.035Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "windows with arches, detailed facade", "filename": "X=-48240.691Y=31947.674Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate cornice", "filename": "X=-42144.004Y=35168.160Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative elements on the upper floors", "filename": "X=-41826.551Y=30316.053Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate cornice and arched windows", "filename": "X=-58244.043Y=21478.043Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-43316.496Y=29320.133Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-49372.871Y=24638.379Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-59314.727Y=14132.541Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched entrances and decorative details", "filename": "X=-50775.699Y=7668.091Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornamental", "filename": "X=-57059.734Y=8999.686Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-52835.859Y=18941.006Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-52038.750Y=29210.525Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=-53744.859Y=18530.062Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "brick exterior, multiple windows", "filename": "X=-43696.027Y=37883.113Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "ornate cornices", "filename": "X=-50958.168Y=-5066.662Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "symmetrical windows with decorative arches", "filename": "X=-62665.797Y=12996.203Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-49855.785Y=14815.644Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-56264.562Y=26937.707Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "terraces", "filename": "X=28999.027Y=55985.707Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative top trim", "filename": "X=-54826.598Y=28025.434Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-41152.176Y=-37277.391Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on top floors", "filename": "X=-52519.770Y=24065.832Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "multiple arched windows", "filename": "X=-53711.266Y=23456.920Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "decorated cornice", "filename": "X=-53189.801Y=31181.895Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "tiered structure with vertical windows", "filename": "X=46299.500Y=4246.257Z=0.png"}
+{"type": "building", "color": "light brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-60762.867Y=25752.002Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "multiple rectangular windows with some arched windows in the middle section", "filename": "X=-53785.082Y=32159.238Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "multiple windows", "filename": "X=-59769.105Y=24097.021Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-64902.672Y=16870.578Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "many windows, ornate arches above windows", "filename": "X=-61736.305Y=27614.645Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-57827.508Y=29671.814Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-12898.625Y=19247.051Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-57297.395Y=26632.926Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate architectural details", "filename": "X=-6278.696Y=-48040.418Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-42449.348Y=39518.949Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows, decorative elements at the top", "filename": "X=-57131.520Y=30217.121Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-53780.340Y=28422.305Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-58362.379Y=25685.340Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "ornate windows, staircases at the entrance", "filename": "X=-63823.359Y=21920.443Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-63985.906Y=6349.138Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-58755.098Y=29183.051Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "brick texture", "filename": "X=-61161.223Y=14026.062Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-51076.711Y=19739.506Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-55316.383Y=16407.191Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "many windows and ornate design", "filename": "X=-52680.059Y=30386.816Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on the top floor", "filename": "X=-57330.945Y=19853.715Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "windows and small balconies", "filename": "X=-60628.461Y=16662.926Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "numerous uniformly spaced windows", "filename": "X=-56285.352Y=30577.453Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "ornate cornice", "filename": "X=-62180.445Y=19096.104Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "stylized roof", "filename": "X=-50286.551Y=20197.785Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-51811.125Y=19261.848Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-55388.316Y=31234.984Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-50587.559Y=11453.354Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with mixed materials", "filename": "X=23379.883Y=-35424.238Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-61304.340Y=17644.939Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate cornice and arched windows", "filename": "X=-56508.148Y=21776.076Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=-61052.312Y=1266.978Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "decorative window arches", "filename": "X=-64391.359Y=12249.853Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-55167.699Y=22244.438Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-55469.816Y=27310.602Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "many evenly spaced windows", "filename": "X=-64723.207Y=23584.699Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-65726.062Y=2371.944Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "columns", "filename": "X=-3951.906Y=-56265.461Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "large windows with balconies", "filename": "X=-2707.609Y=-46475.469Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "brick facade with arched windows", "filename": "X=-59974.426Y=15211.535Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "multiple windows", "filename": "X=-56344.977Y=18157.865Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the lower level", "filename": "X=-62315.062Y=3455.155Z=0.png"}
+{"type": "building", "color": "white", "size": "low-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-52433.406Y=13413.484Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with rectangular windows", "filename": "X=-52292.793Y=-12741.024Z=0.png"}
+{"type": "building", "color": "red", "size": "high-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=-9114.146Y=-44378.211Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "decorative arches above windows", "filename": "X=-55793.738Y=17158.400Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on upper floors", "filename": "X=-54326.234Y=17996.891Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "ornamental arches and intricate window designs", "filename": "X=-69684.773Y=13694.940Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "grid of windows", "filename": "X=-60470.746Y=-23360.553Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-72251.039Y=21332.217Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=-57279.211Y=3667.289Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=-67520.016Y=20481.674Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate detailing and arched windows", "filename": "X=-67880.492Y=10370.317Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-71844.102Y=17312.719Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the bottom", "filename": "X=-23255.416Y=-19337.928Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-74151.641Y=21328.773Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-4277.594Y=-3485.613Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "ornate lower facade with large windows", "filename": "X=-72676.867Y=7278.782Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-66102.391Y=11176.401Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "ornate windows", "filename": "X=-66120.922Y=25919.186Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "ornate facade with arches and decorative elements", "filename": "X=-70691.648Y=18604.346Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-70191.148Y=14471.115Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-67101.859Y=4754.899Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-68311.289Y=23707.168Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "ornate", "filename": "X=-72997.789Y=10994.132Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-70615.297Y=1088.293Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative arches above windows", "filename": "X=-65116.926Y=11679.703Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-70715.773Y=22309.770Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-69137.523Y=23311.975Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-65639.719Y=25134.881Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-66844.750Y=21141.074Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate", "filename": "X=-66541.516Y=15974.039Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-73159.281Y=-4279.430Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "multiple arched windows", "filename": "X=-68187.656Y=14788.195Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "ornate architecture", "filename": "X=-69337.484Y=13007.002Z=0.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-72804.586Y=18965.131Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "decorative arches above several floors", "filename": "X=-2954.664Y=51149.531Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate cornice and arched windows", "filename": "X=-67393.531Y=24328.453Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows on top floor", "filename": "X=-68526.141Y=-2526.152Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "multiple windows", "filename": "X=-69241.836Y=19731.275Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-65800.539Y=21541.621Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with large glass windows on the top floors", "filename": "X=23321.338Y=-41044.605Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows, decorative cornices", "filename": "X=-67348.734Y=15545.312Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "multiple windows", "filename": "X=-73522.789Y=20319.283Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-82229.031Y=11793.120Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "intricate facade", "filename": "X=-75068.766Y=9783.439Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "numerous windows", "filename": "X=-77040.703Y=14756.754Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "columns", "filename": "X=-75189.828Y=-829.615Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "numerous windows with amber lights", "filename": "X=-76167.398Y=4867.809Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows and decorative cornices", "filename": "X=-79806.852Y=16357.912Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "windows", "filename": "X=65185.676Y=19824.906Z=0.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "grid of windows", "filename": "X=-77467.062Y=7075.358Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "arched windows on upper floor", "filename": "X=-83653.875Y=14225.184Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the top", "filename": "X=-20844.846Y=-6355.273Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "striped pattern", "filename": "X=562.509Y=47316.527Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-79484.945Y=4971.763Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-79609.305Y=8818.915Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-4526.009Y=10859.175Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornamental detailing on top, large windows", "filename": "X=8991.906Y=-49704.992Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "ornate fa\u00e7ade with arched windows and decorative elements", "filename": "X=-9163.407Y=10009.595Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-18481.357Y=18945.289Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "ornate", "filename": "X=-2729.017Y=-44028.102Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "horizontal stripes", "filename": "X=-9217.423Y=-36949.992Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "decorative arches near the top and detailed facade with columns and pediments", "filename": "X=-2686.485Y=-49237.289Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-8711.078Y=969.599Z=0.png"}
+{"type": "building", "color": "cream", "size": "high-rise", "shape": "rectangular with an extension on top", "feature": "repetitive window pattern", "filename": "X=-8612.012Y=25828.846Z=0.png"}
+{"type": "building", "color": "grey", "size": "high-rise", "shape": "rectangular", "feature": "windows", "filename": "X=-8706.484Y=-28314.547Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-1799.303Y=-5205.643Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arches under the roof edge", "filename": "X=-22504.176Y=26634.461Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=-2451.390Y=-51927.043Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "tall, grid-patterned facade", "filename": "X=28921.982Y=44603.480Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "tiered rectangular", "feature": "glass facade", "filename": "X=4447.410Y=10859.619Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows, decorative moldings", "filename": "X=2440.413Y=-58585.902Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "columns and cornices", "filename": "X=10643.960Y=-58585.914Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative architectural elements at the top", "filename": "X=4985.128Y=-57857.129Z=0.png"}
+{"type": "building", "color": "light", "size": "high-rise", "shape": "rectangular", "feature": "arched entrance", "filename": "X=8991.899Y=-34450.414Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows with intricate moldings", "filename": "X=10679.539Y=-26682.504Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate upper facade", "filename": "X=8750.337Y=-53835.359Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the top", "filename": "X=10635.318Y=-57219.371Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=10643.955Y=-30795.832Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangle", "feature": "windows with arches and decorative elements", "filename": "X=6731.806Y=-25419.336Z=0.png"}
+{"type": "building", "color": "pink", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with arches", "filename": "X=7076.454Y=-38179.211Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "grid windows", "filename": "X=8607.752Y=4237.960Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "ornate detailing near the roofline", "filename": "X=-34929.418Y=3056.724Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular with a setback", "feature": "grid of windows", "filename": "X=13565.113Y=28777.337Z=618.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with arched windows", "filename": "X=21553.869Y=-57929.406Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "ornate cornice", "filename": "X=15283.327Y=-55159.926Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows, decorative facade", "filename": "X=20448.779Y=-57768.660Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arch windows", "filename": "X=18660.488Y=-58012.867Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate facade with arched windows", "filename": "X=23492.920Y=-53823.840Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows with decorative molding", "filename": "X=23393.180Y=-55159.926Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=10017.494Y=45864.117Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with arched windows", "filename": "X=19434.902Y=-48032.207Z=0.png"}
+{"type": "building", "color": "pink", "size": "mid-rise", "shape": "rectangular", "feature": "decorative reliefs", "filename": "X=15787.706Y=-46023.297Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "ornate cornice", "filename": "X=-68806.844Y=11941.136Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "rows of windows, classical design elements, decorative cornices", "filename": "X=21082.996Y=-19326.473Z=1320.000.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "stepped", "feature": "windows", "filename": "X=12978.263Y=59751.582Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate cornices and multiple windows", "filename": "X=7645.246Y=-53894.672Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "gothic", "filename": "X=59420.934Y=40074.312Z=0.png"}
+{"type": "building", "color": "pink", "size": "low-rise", "shape": "rectangular", "feature": "ornate facade with large windows", "filename": "X=23721.906Y=-44136.871Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=18035.514Y=-54105.590Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=15243.961Y=-58755.363Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "grid of windows", "filename": "X=-33156.812Y=-4104.862Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=31064.035Y=-54158.824Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arches on top floor", "filename": "X=23893.158Y=-12637.332Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on ground floor", "filename": "X=22967.244Y=-48050.836Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arch windows", "filename": "X=15213.374Y=-57866.125Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=19535.342Y=-53908.215Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "decorative facades with arched entrance", "filename": "X=15816.639Y=-43762.672Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "vertical lines", "filename": "X=20337.806Y=34892.974Z=618.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=23447.492Y=-53077.781Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=15243.959Y=-53077.781Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "ornate carvings near the roofline", "filename": "X=16500.469Y=-35103.391Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=20131.799Y=-44136.867Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "grid-like windows", "filename": "X=21082.996Y=-19326.473Z=1320.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "perforated facade", "filename": "X=18368.424Y=51605.438Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass exterior", "filename": "X=42215.578Y=-25200.551Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows with decorative elements", "filename": "X=20448.779Y=-53851.148Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative architectural details", "filename": "X=23447.492Y=-58755.352Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "grid-patterned facade", "filename": "X=-43668.086Y=-19231.311Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "tiered", "feature": "multiple setbacks with symmetrical design", "filename": "X=16443.680Y=-27876.764Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "tapered rectangular", "feature": "tiered sections", "filename": "X=16845.029Y=20953.131Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "grid of windows", "filename": "X=16845.754Y=3047.031Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "ornate roofline", "filename": "X=16999.072Y=-39740.047Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "detailed facade with decorative elements", "filename": "X=23380.572Y=-38305.102Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=20534.619Y=-35073.547Z=0.png"}
+{"type": "building", "color": "light gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative facade", "filename": "X=15813.385Y=-48974.988Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate upper facade with arched windows", "filename": "X=17365.781Y=-57846.254Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with arched windows", "filename": "X=21553.869Y=-53786.035Z=0.png"}
+{"type": "building", "color": "reddish-brown", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=15203.733Y=-56724.945Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=19535.342Y=-57985.680Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornice, large windows", "filename": "X=23420.156Y=-57866.125Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=15225.299Y=-53823.840Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "grid facade", "filename": "X=21070.428Y=-39740.051Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular with step backs", "feature": "multiple windows and decorative moldings on top floors", "filename": "X=21795.457Y=-27876.764Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows and decorative stonework", "filename": "X=2435.607Y=-28110.480Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "multiple rows of windows", "filename": "X=19083.840Y=-12571.863Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate fa\u00e7ade with arched windows", "filename": "X=2474.302Y=-57542.641Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice and repetitive window pattern", "filename": "X=2440.412Y=-25023.404Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative roof trim", "filename": "X=8750.333Y=-30326.535Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows with decorative elements", "filename": "X=4809.095Y=-54062.055Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "ornate upper facade", "filename": "X=8750.333Y=-25644.244Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate window frames", "filename": "X=10643.959Y=-53386.461Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornices and symmetrical windows", "filename": "X=10596.337Y=-54545.117Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the top floor", "filename": "X=7645.242Y=-25426.852Z=0.png"}
+{"type": "building", "color": "striped", "size": "high-rise", "shape": "rectangular", "feature": "horizontal stripes", "filename": "X=24698.900Y=27816.876Z=645.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornamental facade", "filename": "X=7645.247Y=-57787.047Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "uniform windows", "filename": "X=25111.680Y=59965.008Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=-39883.211Y=31031.211Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on lower levels", "filename": "X=3640.133Y=-39752.730Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=34307.441Y=-40066.621Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with arched windows and decorative elements", "filename": "X=35829.051Y=-55384.387Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "ornate decorations near the roof", "filename": "X=28047.498Y=-43575.836Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=31046.203Y=-49528.004Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "twin towers", "filename": "X=53884.828Y=32177.270Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate facade with columns and arches", "filename": "X=28047.492Y=-49920.211Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=29941.113Y=-44280.703Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows and ornate architectural details", "filename": "X=35851.039Y=-57737.742Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows, ornate cornices", "filename": "X=31938.891Y=-57979.059Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with arched windows", "filename": "X=35828.496Y=-45714.043Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "arched windows on top floor", "filename": "X=32001.117Y=-18416.891Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=28604.557Y=-13648.361Z=0.png"}
+{"type": "building", "color": "black", "size": "low-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-48370.672Y=9025.331Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "many small square windows", "filename": "X=21105.000Y=45832.418Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "stepped", "filename": "X=25070.980Y=48777.246Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=28036.742Y=-46037.316Z=0.png"}
+{"type": "building", "color": "dark", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade on upper floors", "filename": "X=34307.441Y=-34450.414Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=32834.496Y=-49322.523Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "multiple balconies", "filename": "X=34742.875Y=5222.956Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "grid-like window pattern", "filename": "X=22250.613Y=3509.732Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "detailed fa\u00e7ade with arched windows", "filename": "X=27956.400Y=-47535.918Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornamental details", "filename": "X=31959.645Y=-44465.570Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=27992.541Y=-56812.359Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=32852.324Y=-53871.156Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=35719.711Y=-47535.918Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=31046.203Y=-44330.254Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=33957.414Y=-54130.422Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative facade", "filename": "X=33957.414Y=-57993.715Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "tiered design", "filename": "X=31207.676Y=28592.367Z=0.png"}
+{"type": "building", "color": "dark", "size": "high-rise", "shape": "stepped", "feature": "grid-like facade", "filename": "X=34742.879Y=2171.386Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "many windows, tiered structure", "filename": "X=31899.969Y=-28006.996Z=78.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arches above windows", "filename": "X=28047.492Y=-53575.285Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=31938.889Y=-53866.203Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "multiple arched windows", "filename": "X=35801.883Y=-44618.902Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative cornices", "filename": "X=35827.492Y=-46537.520Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "grid-like window pattern", "filename": "X=35832.660Y=-18476.398Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "windows", "filename": "X=28548.932Y=-11158.126Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows with decorative elements", "filename": "X=28000.541Y=-48711.570Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative upper facade", "filename": "X=29969.320Y=-57955.566Z=0.png"}
+{"type": "building", "color": "brick", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=28047.492Y=-58507.160Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "tall and slender", "filename": "X=42471.266Y=31566.201Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=29151.566Y=-37632.508Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=35881.773Y=-48711.570Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative rooftop", "filename": "X=35816.492Y=-53800.426Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornices and arched windows", "filename": "X=32852.324Y=-57990.016Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "grid-like window pattern", "filename": "X=-8219.306Y=56329.340Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate arches", "filename": "X=35851.039Y=-43575.832Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "repetitive window pattern", "filename": "X=-33870.527Y=-54896.367Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows, decorative elements on the top", "filename": "X=29941.113Y=-49517.008Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the top", "filename": "X=29591.104Y=3960.130Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "grid-pattern windows", "filename": "X=29324.930Y=10783.445Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "gothic architecture", "filename": "X=54497.051Y=43591.566Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "balconies on each floor", "filename": "X=34257.008Y=-37239.648Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=31959.645Y=-49231.688Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative architectural elements", "filename": "X=30016.174Y=-53948.754Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=33882.355Y=-49555.652Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "ornate upper facade with arched windows", "filename": "X=28022.727Y=-44618.902Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate details around windows", "filename": "X=31064.039Y=-57801.367Z=0.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade with arched windows in the lower section", "filename": "X=-16071.300Y=-49353.348Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=41251.039Y=-40429.473Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=29155.676Y=-39752.723Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=28022.949Y=-55623.977Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "ornate cornice and brick facade", "filename": "X=35851.039Y=-49763.926Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular with a tiered design", "feature": "large windows", "filename": "X=32539.625Y=-12996.712Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "ornate top floor design with large windows", "filename": "X=3629.727Y=-46522.914Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "ornate top", "filename": "X=8005.302Y=-47922.145Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative arches above windows and ornate cornice", "filename": "X=5231.977Y=-25465.570Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "ornate cornice", "filename": "X=5012.306Y=-49027.281Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "grid-like windows", "filename": "X=8005.302Y=-45152.277Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular with stepped section", "feature": "grid-like windows", "filename": "X=31130.270Y=20489.881Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative facade", "filename": "X=46299.496Y=1194.688Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "stepped design with a tiered structure", "filename": "X=50581.117Y=47507.875Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "grid-like windows", "filename": "X=9457.213Y=-19231.311Z=618.777.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "decorative upper facade", "filename": "X=11057.474Y=4246.259Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative facade", "filename": "X=43920.152Y=-39931.090Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and ornate architectural details", "filename": "X=46972.883Y=-37336.262Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "ornate details along the top", "filename": "X=46975.215Y=-38806.293Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative arched windows and detailed cornices", "filename": "X=41251.039Y=-33901.348Z=0.png"}
+{"type": "building", "color": "pink", "size": "low-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=-42693.129Y=-12741.024Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with arched windows", "filename": "X=43006.719Y=-34867.738Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative windows and stone carvings", "filename": "X=45025.242Y=-39980.902Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "vertical windows", "filename": "X=-37916.676Y=21593.258Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at the top", "filename": "X=46299.480Y=-19977.588Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows with decorative elements", "filename": "X=41127.742Y=-37336.262Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched entrance, decorative elements", "filename": "X=46236.469Y=-30220.078Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate", "filename": "X=53675.855Y=-25271.049Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on lower floors", "filename": "X=42215.590Y=5509.086Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=23426.715Y=-56724.938Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular with tiered sections", "feature": "large windows", "filename": "X=48204.055Y=25834.527Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows at top, grid-like window pattern", "filename": "X=48055.176Y=-44449.883Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows, balconies", "filename": "X=46918.867Y=-33901.348Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=46918.859Y=-40429.473Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "grid-like window pattern", "filename": "X=46299.484Y=-25126.607Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and ornate roof decoration", "filename": "X=43152.238Y=-44051.043Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows on the top floors", "filename": "X=42979.863Y=-39885.316Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornices, arched windows", "filename": "X=5856.952Y=-30170.094Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=48814.781Y=37247.316Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=41204.750Y=-38806.293Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative facades with arched entrance", "filename": "X=44223.547Y=-45833.895Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "large windows with arches above them", "filename": "X=43920.152Y=-34805.695Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "historical", "filename": "X=41670.348Y=-19231.309Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "numerous windows", "filename": "X=46299.480Y=-17782.441Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "decorative facade with windows", "filename": "X=42156.426Y=-27841.033Z=0.png"}
+{"type": "building", "color": "brown", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows near the top", "filename": "X=46499.543Y=-13049.691Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "gothic-style architecture", "filename": "X=42215.590Y=2457.518Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "grid-like facade", "filename": "X=20337.806Y=34892.974Z=618.777.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "striped pattern with glass windows", "filename": "X=42215.578Y=-30517.246Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "columns and arches", "filename": "X=-23211.441Y=10009.178Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornamented top", "filename": "X=45025.242Y=-34715.516Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "uniform windows", "filename": "X=53041.246Y=-35645.043Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornices", "filename": "X=46866.965Y=-35276.617Z=0.png"}
+{"type": "building", "color": "white", "size": "low-rise", "shape": "rectangular", "feature": "many windows with decorative arches", "filename": "X=41072.344Y=-47801.359Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative windows with arches", "filename": "X=2398.992Y=-29674.035Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative cornice", "filename": "X=5856.956Y=-53836.438Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "tiered design", "filename": "X=52120.551Y=21918.789Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular with a smaller upper section", "feature": "uniform window grid pattern", "filename": "X=38554.770Y=35481.941Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative upper cornice", "filename": "X=8750.337Y=-57872.699Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "gothic-style", "filename": "X=9978.507Y=-38200.730Z=0.png"}
+{"type": "building", "color": "red", "size": "high-rise", "shape": "rectangular", "feature": "decorative crown", "filename": "X=44898.660Y=41163.430Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "grid of windows", "filename": "X=4092.465Y=5509.087Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular with staggered sections", "feature": "lots of windows", "filename": "X=724.893Y=32750.332Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "lots of windows", "filename": "X=62927.391Y=-6840.476Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=10643.954Y=-25098.547Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows and decorative stonework", "filename": "X=41225.859Y=-35545.512Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=41237.547Y=-36584.395Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "many small windows", "filename": "X=32941.355Y=41094.258Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "tiered setbacks", "filename": "X=38931.355Y=47130.730Z=0.png"}
+{"type": "building", "color": "gray", "size": "low-rise", "shape": "rectangular", "feature": "arched windows on the lower floors", "filename": "X=-36268.926Y=21393.189Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "tiered", "feature": "grid-like window structure", "filename": "X=-7205.009Y=38400.547Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "classical design with intricate detailing and large arched entryway", "filename": "X=62309.953Y=-12741.026Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "glass windows", "filename": "X=-21223.066Y=-58341.027Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular", "feature": "many small square windows", "filename": "X=55761.164Y=-27538.449Z=0.png"}
+{"type": "building", "color": "beige", "size": "high-rise", "shape": "rectangular with setbacks", "feature": "tiered levels", "filename": "X=35013.984Y=51048.094Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=6731.806Y=-30251.314Z=0.png"}
+{"type": "building", "color": "brown", "size": "low-rise", "shape": "rectangular", "feature": "decorative upper facade", "filename": "X=6731.811Y=-58035.273Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "grid-like facade with large windows", "filename": "X=58532.066Y=36824.500Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate", "filename": "X=58531.336Y=-19231.311Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arches at the entrance", "filename": "X=61142.652Y=-19231.311Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "grid-like window pattern", "filename": "X=63779.473Y=-3107.385Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "many arched windows, decorative details on the upper facade", "filename": "X=-60026.609Y=28596.311Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative facade", "filename": "X=57603.730Y=-12741.024Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "grid-pattern windows", "filename": "X=65843.484Y=24974.840Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular with a dome roof", "feature": "dome", "filename": "X=31899.969Y=-28006.996Z=78.743.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "multiple windows", "filename": "X=3640.128Y=-35157.180Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornice and window arches", "filename": "X=4809.091Y=-30023.965Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows on the top floor", "filename": "X=10602.049Y=-55720.766Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=6731.810Y=-53829.234Z=0.png"}
+{"type": "building", "color": "white", "size": "mid-rise", "shape": "rectangular", "feature": "decorative architectural details", "filename": "X=-65221.070Y=-14189.893Z=0.png"}
+{"type": "building", "color": "dark", "size": "high-rise", "shape": "tiered", "feature": "stepped design", "filename": "X=13565.113Y=28777.337Z=618.404.png"}
+{"type": "building", "color": "black", "size": "mid-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=-36523.805Y=42524.223Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "grid-patterned glass facade", "filename": "X=2562.584Y=-48998.234Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "many windows", "filename": "X=2177.017Y=2457.518Z=0.png"}
+{"type": "building", "color": "brown", "size": "high-rise", "shape": "rectangular", "feature": "stepped design", "filename": "X=-3194.237Y=30491.787Z=0.png"}
+{"type": "building", "color": "white", "size": "high-rise", "shape": "rectangular", "feature": "striped windows", "filename": "X=-9163.400Y=-34875.344Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=2444.815Y=-26922.094Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "arched windows", "filename": "X=2440.412Y=-53492.762Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with vertical columns", "filename": "X=-9480.223Y=-4019.238Z=0.png"}
+{"type": "building", "color": "black", "size": "high-rise", "shape": "rectangular", "feature": "glass facade", "filename": "X=3624.455Y=-37632.512Z=0.png"}
+{"type": "building", "color": "grey", "size": "high-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=-3811.636Y=-40104.375Z=0.png"}
+{"type": "building", "color": "gray", "size": "high-rise", "shape": "rectangular", "feature": "tall with repetitive windows", "filename": "X=9444.236Y=1194.690Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "arched windows at the top", "filename": "X=10654.197Y=-28904.617Z=0.png"}
+{"type": "building", "color": "beige", "size": "low-rise", "shape": "rectangular", "feature": "ornate facade", "filename": "X=2440.413Y=-30795.832Z=0.png"}
+{"type": "building", "color": "red", "size": "low-rise", "shape": "rectangular", "feature": "decorative cornices", "filename": "X=2431.472Y=-54545.117Z=0.png"}
+{"type": "building", "color": "red", "size": "mid-rise", "shape": "rectangular", "feature": "ornate detailing at the top", "filename": "X=2443.202Y=-55720.766Z=0.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "decorative details above windows", "filename": "X=7645.242Y=-30201.930Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "grid-patterned glass facade", "filename": "X=10907.353Y=-45954.680Z=0.png"}
+{"type": "building", "color": "gray", "size": "mid-rise", "shape": "rectangular", "feature": "large windows", "filename": "X=41870.402Y=-14189.891Z=0.png"}
+{"type": "building", "color": "grey", "size": "mid-rise", "shape": "rectangular", "feature": "ornate facade with repetitive arched and rectangular windows", "filename": "X=9457.213Y=-19231.311Z=618.png"}
+{"type": "building", "color": "beige", "size": "mid-rise", "shape": "rectangular", "feature": "windows in a grid pattern", "filename": "X=3640.135Y=-44402.699Z=0.png"}

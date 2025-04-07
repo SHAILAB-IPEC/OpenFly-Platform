@@ -1,0 +1,45 @@
+datagen:
+  env:                        "env_airsim_16"                          # Environment name, please keep it the same as the file name
+  data_type:                  "low_long"                               # Trajectory type, create a folder with this type as the folder name to store trajectory
+  freq:                       2                                        # Image sampling frequency
+
+traj_map:
+  DilateRadius:               3                                        # Map dilation radius
+  VoxelWidth:                 1.5                                      # Voxel map resolution
+  MapBound:                   [-1300, 1000, -600, 1000, -200, 200]     # Global voxel map range, within which trajectory generation is also performed.
+  LidarDelta:                 [200, 200, 50]                           # Step size of gridded point cloud sampling
+  pcd_scale_ratio:            1                                        # The scale between the point cloud and the unified coordinate system.
+  traj_scale_ratio:           1                                        # The scale between motion actions and the unified coordinate system.
+  map_elevation:              0                                        # The horizontal height of the ground in the environment
+  min_height_thresh:          6                                        # Minimum altitude threshold for drone flight distance from the ground
+
+seg_map:
+  bev_voxel_size:             4.0                                      # Voxel resolution during semantic segmentation
+
+thread_params:                                                         # Multi-threaded configuration, which allows setting up multiple threads for concurrent data collection and supports parallel simulation scenarios on either a single PC or across multiple PCs.
+  - name: "thread_1"                                                   # Thread ID
+    nums: 1000                                                         # Number of collected trajectories
+    min_dis: 150                                                       # The shortest distance from the landmark, multiple landmarks will accumulate
+    max_dis: 180                                                       # The longest distance from the landmark, multiple landmarks will accumulate
+    height_min: 5                                                      # The minimum ground clearance of the generated trajectory.
+    height_max: 10                                                     # The maximum ground clearance of the generated trajectory.
+    aim_port: 9999                                                     # The port that receives commands from the trajectory planner.
+    listen_port: 9998                                                  # The port that receives commands from the simulator.
+    sim_ip: "127.0.0.1"                                                # The IP address where the simulation is located can be local or other PCs within the local area network.
+    sim_port: 9000                                                     # The port for connecting to the simulation.
+    aimlandmark_nums: 1                                                # The number of destinations in a single trajectory.
+    add_takeoff_land: true                                             # Whether to include takeoff and landing phases (not applicable in GS scenarios).
+    with_turn: true                                                    # Whether to enforce mandatory turns within a trajectory segment.
+
+  # - name: "thread_2"
+  #   nums: 1000
+  #   min_dis: 150
+  #   max_dis: 180
+  #   height_min: 36
+  #   height_max: 66
+  #   aim_port: 9997
+  #   listen_port: 9996
+  #   sim_ip: "192.168.31.100"
+  #   ue_port: 9000
+  #   aimmark_nums: 1
+  #   add_takeoff_land: true

@@ -1,0 +1,13 @@
+msgpack-rpc-python
+airsim
+
+opencv-python
+numpy
+pyyaml
+
+unrealcv
+psutil
+requests
+pandas
+
+aiofiles
