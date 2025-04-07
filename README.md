@@ -17,7 +17,8 @@ OpenFly is an innovative platform designed to advance research in outdoor aerial
 4. [Toolchain](#Toolchain)
 5. [Training](#Training)
 6. [Evaluation](#Evaluation)
-7. [License](#license)
+7. [Test](#Test)
+8. [License](#license)
 
 ## Prerequisites
 - Operating System: Linux (Ubuntu 22.04 recommended) Windows (For GTAV)
