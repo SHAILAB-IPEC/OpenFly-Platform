@@ -41,6 +41,9 @@ conda activate openfly
 pip install -r requirements.txt
 pip install packaging ninja
 pip install "flash-attn==2.5.5" --no-build-isolation
+git clone https://github.com/kvablack/dlimp
+cd dlimp
+pip install -e .
 ```
 
 ### Step 3: Install Dependencies
