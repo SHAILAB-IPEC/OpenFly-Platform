@@ -7,11 +7,13 @@ format to OpenVLA, IterableDataset shim.
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Tuple, Type, Union, List, Optional, Callable
+from typing import Any, Dict, Tuple, Union, List, Optional, Callable
 from copy import deepcopy
+import inspect
 import numpy as np
 import torch
 import dlimp as dl
+from functools import partial
 from PIL import Image
 from torch.utils.data import Dataset, IterableDataset
 from transformers import PreTrainedTokenizerBase
@@ -27,9 +29,13 @@ from datasets.data_utils import (
     get_dataset_statistics,
     normalize_action_and_proprio,
     pprint_data_mixture,
+    
 )
 
 from model.prompt_llama2 import LLaMa2ChatPromptBuilder
+from model.overwatch import initialize_overwatch
+
+overwatch = initialize_overwatch(__name__)
 
 # HuggingFace Default / LLaMa-2 IGNORE_INDEX (for labels)
 IGNORE_INDEX = -100
@@ -351,13 +357,6 @@ def make_interleaved_dataset(
             num_parallel_reads=reads,
             dataset_statistics=all_dataset_statistics[dataset_kwargs["name"]],
         )
-        dataset = apply_trajectory_transforms(
-            dataset.repeat(),
-            **traj_transform_kwargs,
-            num_parallel_calls=threads,
-            train=train,
-        ).flatten(num_parallel_calls=threads)
-        dataset = apply_per_dataset_frame_transforms(dataset, **dataset_frame_transform_kwargs)
         datasets.append(dataset)
 
     # Interleave at the Frame Level
@@ -373,7 +372,6 @@ def make_interleaved_dataset(
 
     # Apply Frame Transforms
     overwatch.info("Applying frame transforms on dataset...")
-    dataset = apply_frame_transforms(dataset, **frame_transform_kwargs, train=train)
 
     # [Contract] When training VLA Policies, we let the Collator handle Batching!
     if batch_size is not None:
