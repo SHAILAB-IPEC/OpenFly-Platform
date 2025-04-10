@@ -3,6 +3,7 @@ from typing import Any, Dict, Tuple, Type, Union, List, Optional, Callable
 from torch.utils.data import Dataset
 from transformers import PreTrainedTokenizerBase
 import dlimp as dl
+from functools import partial
 from model import DinoSigLIPImageTransform 
 from datasets.data_utils import PaddedCollatorForActionPrediction
 from model import ActionTokenizer
@@ -57,13 +58,13 @@ def apply_trajectory_transforms(
         dataset = dataset.filter(lambda x: tf.math.reduce_all(tf.math.abs(x["observation"]["proprio"]) <= max_proprio))     
 
     # marks which entires of the observation and task dicts are padding
-    dataset = dataset.traj_map(traj_transforms.add_pad_mask_dict, num_parallel_calls)
+    dataset = dataset.traj_map(add_pad_mask_dict, num_parallel_calls)
 
     # chunks observations and actions, giving them a new axis at index 1 of size `window_size` and
     # `window_size + future_action_window_size`, respectively
     dataset = dataset.traj_map(
         partial(
-            traj_transforms.chunk_act_obs,
+            chunk_act_obs,
             window_size=window_size,
             future_action_window_size=future_action_window_size,
         ),
@@ -73,7 +74,7 @@ def apply_trajectory_transforms(
 
     if train and subsample_length is not None:
         dataset = dataset.traj_map(
-            partial(traj_transforms.subsample, subsample_length=subsample_length),
+            partial(subsample, subsample_length=subsample_length),
             num_parallel_calls,
         )
 
