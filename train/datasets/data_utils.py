@@ -3,7 +3,8 @@ data_utils.py
 
 General utilities and classes for facilitating data loading and collation.
 """
-
+import json
+import logging
 from dataclasses import dataclass
 from enum import Enum
 from typing import Callable, Dict, Sequence, Tuple, Union, List, Optional, Type, Any
@@ -13,7 +14,10 @@ import dlimp as dl
 import numpy as np
 import tensorflow as tf
 from tqdm import tqdm
+import hashlib
+from model.overwatch import initialize_overwatch
 
+overwatch = initialize_overwatch(__name__)
 
 # HuggingFace Default / LLaMa-2 IGNORE_INDEX (for labels)
 IGNORE_INDEX = -100
