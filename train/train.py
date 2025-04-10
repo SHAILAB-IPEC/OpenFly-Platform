@@ -173,7 +173,6 @@ def main(data_args=None, training_args=None):
         worker_init_fn=worker_init_fn,
         sharding_strategy="full-shard",
     )
-    return strategy
     train_strategy.run_setup(run_dir=run_dir, n_train_examples=len(vla_dataset))
 
     metrics = VLAMetrics(
