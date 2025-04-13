@@ -3,18 +3,23 @@ data_utils.py
 
 General utilities and classes for facilitating data loading and collation.
 """
+import os
+import math
 import json
+import random
 import logging
+import hashlib
 from dataclasses import dataclass
 from enum import Enum
-from typing import Callable, Dict, Sequence, Tuple, Union, List, Optional, Type, Any
+from typing import Callable, Dict, Sequence, Tuple, Union, List, Optional, Type, Any, Iterator
 import torch
+import torch.distributed as dist
 from torch.nn.utils.rnn import pad_sequence
+from torch.utils.data import Dataset, Sampler
 import dlimp as dl
 import numpy as np
 import tensorflow as tf
 from tqdm import tqdm
-import hashlib
 from model.overwatch import initialize_overwatch
 
 overwatch = initialize_overwatch(__name__)
@@ -157,17 +162,6 @@ class PaddedCollatorForActionPrediction:
             output["dataset_names"] = dataset_names
         return output
 
-
-import os
-import random
-from typing import Callable, Optional
-
-import numpy as np
-import torch
-
-# === Randomness ===
-
-
 def set_global_seed(seed: int, get_worker_init_fn: bool = False) -> Optional[Callable[[int], None]]:
     """Sets seed for all randomness libraries (mostly random, numpy, torch) and produces a `worker_init_fn`"""
     assert np.iinfo(np.uint32).min < seed < np.iinfo(np.uint32).max, "Seed outside the np.uint32 bounds!"
@@ -234,16 +228,6 @@ def check_bloat16_supported() -> bool:
 
     except Exception:
         return False
-
-
-
-import math
-from typing import Iterator, List, Optional, Tuple
-
-import numpy as np
-import torch
-import torch.distributed as dist
-from torch.utils.data import Dataset, Sampler
 
 
 # High-Fidelity Bitwise Reproduction of the LLaVa Codebase Sampler Strategy + Per-Rank Allocation Scheme (following
