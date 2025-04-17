@@ -78,7 +78,7 @@ class PrismaticVisionBackbone(nn.Module):
         assert len(timm_model_ids) <= 2, "Prismatic models only support up to 2 (fused) vision backbones!"
         
         self.featurizer = timm.create_model(
-            timm_model_ids[0], pretrained=True, pretrained_cfg_overlay=dict(file='/cpfs01/shared/optimal/gaoyunpeng/weights/vit_large_patch14_reg4_dinov2/pytorch_model.bin'), num_classes=0, img_size=image_sizes[0]
+            timm_model_ids[0], pretrained=True, num_classes=0, img_size=image_sizes[0]
         )
 
         self.featurizer.forward = unpack_tuple(
@@ -90,7 +90,7 @@ class PrismaticVisionBackbone(nn.Module):
             
             
             self.fused_featurizer = timm.create_model(
-                timm_model_ids[1], pretrained=True, pretrained_cfg_overlay=dict(file='/cpfs01/shared/optimal/gaoyunpeng/weights/vit_large_patch14_reg4_dinov2/open_clip_pytorch_model.bin'), num_classes=0, img_size=image_sizes[1]
+                timm_model_ids[1], pretrained=True, num_classes=0, img_size=image_sizes[1]
             )
 #             self.fused_featurizer = timm.create_model(
 #                 timm_model_ids[1],
