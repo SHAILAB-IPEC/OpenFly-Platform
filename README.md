@@ -275,11 +275,32 @@ You can refer to our evaluation script scripts/sim/eval.py to evaluate your open
 Make sure your trained checkpoint dir has two files: "data_statistics.json". If not, please copy them from downloaded openfly-agent weights or this [link](https://huggingface.co/IPEC-COMMUNITY/spatialvla-4b-224-sft-fractal).
 
 ```python
+
+from typing import Dict, List, Optional, Union
+from pathlib import Path
+import numpy as np
 import torch
 from PIL import Image
-from transformers import AutoModel, AutoProcessor
+from transformers import LlamaTokenizerFast
+from transformers import AutoConfig, AutoImageProcessor, AutoModelForVision2Seq, AutoProcessor
+import os, json
+from model.prismatic import PrismaticVLM
+from model.overwatch import initialize_overwatch
+from model.action_tokenizer import ActionTokenizer
+from model.vision_backbone import DinoSigLIPViTBackbone, DinoSigLIPImageTransform
+from model.llm_backbone import LLaMa2LLMBackbone
+from extern.hf.configuration_prismatic import OpenFlyConfig
+from extern.hf.modeling_prismatic import OpenVLAForActionPrediction
+from extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
 
-model_name_or_path="IPEC-COMMUNITY/openfly-7b"
+
+AutoConfig.register("OpenFly", OpenFlyConfig)
+AutoImageProcessor.register(OpenFlyConfig, PrismaticImageProcessor)
+AutoProcessor.register(OpenFlyConfig, PrismaticProcessor)
+AutoModelForVision2Seq.register(OpenFlyConfig, OpenVLAForActionPrediction)
+
+
+model_name_or_path="IPEC-COMMUNITY/openfly-agent-7b"
 processor = AutoProcessor.from_pretrained(model_name_or_path, trust_remote_code=True)
 model = AutoModel.from_pretrained(model_name_or_path, trust_remote_code=True, torch_dtype=torch.bfloat16).eval().cuda()
 
@@ -290,6 +311,16 @@ generation_outputs = model.predict_action(inputs)
 
 actions = processor.decode_actions(generation_outputs, unnorm_key="vln_norm")
 print(actions)
+
+
+processor = AutoProcessor.from_pretrained("<PATH TO CONVERTED CHECKPOINT DIR>", trust_remote_code=True)
+vla = AutoModelForVision2Seq.from_pretrained(
+    "<PATH TO CONVERTED CHECKPOINT DIR>",
+    attn_implementation="flash_attention_2",  # [Optional] Requires `flash_attn`
+    torch_dtype=torch.bfloat16,
+    low_cpu_mem_usage=True,
+    trust_remote_code=True,
+).to("cuda:0")
 ```
 
 ## License
