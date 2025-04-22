@@ -311,16 +311,6 @@ generation_outputs = model.predict_action(inputs)
 
 actions = processor.decode_actions(generation_outputs, unnorm_key="vln_norm")
 print(actions)
-
-
-processor = AutoProcessor.from_pretrained("<PATH TO CONVERTED CHECKPOINT DIR>", trust_remote_code=True)
-vla = AutoModelForVision2Seq.from_pretrained(
-    "<PATH TO CONVERTED CHECKPOINT DIR>",
-    attn_implementation="flash_attention_2",  # [Optional] Requires `flash_attn`
-    torch_dtype=torch.bfloat16,
-    low_cpu_mem_usage=True,
-    trust_remote_code=True,
-).to("cuda:0")
 ```
 
 ## License
