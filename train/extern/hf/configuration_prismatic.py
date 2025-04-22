@@ -130,7 +130,7 @@ class PrismaticConfig(PretrainedConfig):
 
 
 class OpenFlyConfig(PrismaticConfig):
-    model_type: str = "OpenFly"
+    model_type: str = "openvla"
 
     def __init__(
         self,
