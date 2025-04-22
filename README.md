@@ -294,7 +294,7 @@ from extern.hf.modeling_prismatic import OpenVLAForActionPrediction
 from extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
 
 
-AutoConfig.register("OpenFly", OpenFlyConfig)
+AutoConfig.register("openvla", OpenFlyConfig)
 AutoImageProcessor.register(OpenFlyConfig, PrismaticImageProcessor)
 AutoProcessor.register(OpenFlyConfig, PrismaticProcessor)
 AutoModelForVision2Seq.register(OpenFlyConfig, OpenVLAForActionPrediction)
