@@ -159,7 +159,8 @@ colcon build --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
     ​#manual annotation​
     bash scripts/toolchain/seggen_tool.sh env_xx_xxx manual #such as env_airsim_16
     ```
-    Due to the GPU-intensive nature of rendering in UE projects, we start it in headless mode. If you want to view the UE rendering screen, please comment out the headless-related code in `envs/ue/env_ue_xxx/CitySample.sh`. Note that this may cause the rendering interface to crash.
+
+    Due to the high GPU requirements for rendering urban scenes in UE, to avoid program crashes, the uploaded binary files are configured to use the lowest rendering settings by default (we found that this does not affect the quality of the generated images). If you wish to render images with higher quality, you can refer to `env_ue_xxx/City_UE52/Saved/Config/Linux/GameUserSettings_best.ini` to modify `GameUserSettings.ini`.
     
     GTAV(Coming soon)
 
