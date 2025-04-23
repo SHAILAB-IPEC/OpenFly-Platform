@@ -303,7 +303,7 @@ AutoModelForVision2Seq.register(OpenFlyConfig, OpenVLAForActionPrediction)
 
 model_name_or_path="IPEC-COMMUNITY/openfly-agent-7b"
 processor = AutoProcessor.from_pretrained(model_name_or_path, trust_remote_code=True)
-model = AutoModel.from_pretrained(model_name_or_path, trust_remote_code=True, torch_dtype=torch.bfloat16).eval().cuda()
+model = AutoModelForVision2Seq.from_pretrained(model_name_or_path, trust_remote_code=True, torch_dtype=torch.bfloat16).eval().cuda()
 
 image = Image.open("example.png").convert("RGB")
 prompt = "Take off, go straight pass the river"
