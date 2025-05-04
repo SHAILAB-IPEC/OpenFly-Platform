@@ -8,38 +8,36 @@ from datetime import datetime
 import math
 import os
 import json
+from typing import Dict, List, Optional, Union
+from pathlib import Path
+from PIL import Image
+import torch
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.optim import AdamW
 from torch.utils.data import DataLoader
-from transformers import AutoModelForVision2Seq, AutoProcessor, BitsAndBytesConfig
-from transformers import AutoConfig, AutoImageProcessor
+from transformers import LlamaTokenizerFast
 from transformers.modeling_outputs import CausalLMOutputWithPast
-from prismatic.models.backbones.llm.prompting import PurePromptBuilder, VicunaV15ChatPromptBuilder
-from prismatic.util.data_utils import PaddedCollatorForActionPrediction
-from prismatic.vla.action_tokenizer import ActionTokenizer
-from prismatic.vla.datasets import RLDSBatchTransform, RLDSDataset
-from prismatic.vla.datasets.rlds.utils.data_utils import save_dataset_statistics
+from transformers import AutoConfig, AutoImageProcessor, AutoModelForVision2Seq, AutoProcessor
+import os, json
+from model.prismatic import PrismaticVLM
+from model.overwatch import initialize_overwatch
+from model.action_tokenizer import ActionTokenizer
+from model.vision_backbone import DinoSigLIPViTBackbone, DinoSigLIPImageTransform
+from model.llm_backbone import LLaMa2LLMBackbone
+from extern.hf.configuration_prismatic import OpenFlyConfig
+from extern.hf.modeling_prismatic import OpenVLAForActionPrediction
+from extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
 
-from prismatic.extern.hf.configuration_prismatic import OpenVLAConfig
-from prismatic.extern.hf.modeling_prismatic import OpenVLAForActionPrediction
-from prismatic.extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
 
-
-# Register OpenVLA model to HF AutoClasses (not needed if you pushed model to HF Hub)
-AutoConfig.register("openvla", OpenVLAConfig)
-AutoImageProcessor.register(OpenVLAConfig, PrismaticImageProcessor)
-AutoProcessor.register(OpenVLAConfig, PrismaticProcessor)
-AutoModelForVision2Seq.register(OpenVLAConfig, OpenVLAForActionPrediction)
+AutoConfig.register("openvla", OpenFlyConfig)
+AutoImageProcessor.register(OpenFlyConfig, PrismaticImageProcessor)
+AutoProcessor.register(OpenFlyConfig, PrismaticProcessor)
+AutoModelForVision2Seq.register(OpenFlyConfig, OpenVLAForActionPrediction)
 
 # Load Processor & VLA
-processor = AutoProcessor.from_pretrained("/cpfs01/user/gaoyunpeng/weights/weight_f_history_1ep", trust_remote_code=True)
-base_vla = AutoModelForVision2Seq.from_pretrained(
-    "/cpfs01/user/gaoyunpeng/weights/weight_f_history_1ep", 
-    attn_implementation="flash_attention_2",  # [Optional] Requires `flash_attn`
-    torch_dtype=torch.bfloat16, 
-    low_cpu_mem_usage=True, 
-    trust_remote_code=True,
-).to("cuda:0")
+model_name_or_path="IPEC-COMMUNITY/openfly-agent-7b"
+processor = AutoProcessor.from_pretrained(model_name_or_path, trust_remote_code=True)
+vla = AutoModelForVision2Seq.from_pretrained(model_name_or_path, trust_remote_code=True, torch_dtype=torch.bfloat16).eval().cuda()
 
 class UE5CameraCenter:  
     def __init__(self):  
