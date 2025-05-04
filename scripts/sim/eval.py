@@ -1,6 +1,6 @@
 import socket
 from unrealcv import Client  
-import cv2  # OpenCV  
+import cv2
 import numpy as np  
 import io
 import time
@@ -150,32 +150,12 @@ def load_jsonl_data(json_data):
     ans_list = []
     with open(json_data, 'r', encoding='utf-8') as f:
         for line in f:
-            # 每一行都是一个 JSON 对象
-            # print(line)
             if not line.startswith('{"name":'):
                 continue
             json_object = json.loads(line.strip())
-            # 你可以在这里处理每个 JSON 对象
-            # print(json_object)
             ans_list.append(json_object)
-    # return parsed_data
-    # print(ans_list)
     return ans_list
 
-
-
-# def eval_progress(directory_path):
-#     for root, dirs, files in os.walk(directory_path):
-#         for file in files:
-#             if file.endswith(".jsonl"):
-#                 file_path = os.path.join(root, file)
-#                 with open(file_path, 'r') as f:
-#                     json_data = f.read()
-                    
-#                     # Parse the JSON data
-#                     parsed_data = load_test_data(json_data)
-#                     #init
-#                     print(parsed_data)
 
 def get_images(lst,if_his,step):
     if if_his is False:
@@ -212,8 +192,6 @@ def get_action(image_list, text, his, if_his=False,his_step=0):
     action = vla.predict_action(**inputs, unnorm_key="vln_norm", do_sample=False)
     action = action.tolist()
     max_value = max(action)
-    # print("Action:",action)
-    # print('index:',int(action.index(max_value)))
     return int(action.index(max_value))
 
 
@@ -222,25 +200,16 @@ def calculate_distance(point1, point2):
                      (point2[1] - point1[1])**2 + 
                      (point2[2] - point1[2])**2)
 
-#  将openvla的输出
 
 def getPoseAfterMakeAction(new_pose, action):
-    # 解构 new_pose 数组，获取 x, y, z, yaw（pitch 和 roll 都是 0）
     x, y, z, yaw = new_pose
-
-    # 定义步长
-    step_size = 5.0  # 平移的步长（单位可以根据需要调整）
-
-    # 根据 action 的值更新 new_pose
+    step_size = 5.0
     if action == 0:
-        # 不变
         pass
     elif action == 1:
-        # 向前平移 5 单位（假设是沿着机体系的前方，y 正向）
         x += step_size * math.cos(yaw)
         y += step_size * math.sin(yaw)
     elif action == 2:
-        # 向后平移 5 单位（假设是沿着机体系的后方，y 负向）
         x -= step_size * math.cos(yaw)
         y -= step_size * math.sin(yaw)
     elif action == 4:
@@ -248,32 +217,25 @@ def getPoseAfterMakeAction(new_pose, action):
         x -= step_size * math.sin(yaw)
         y += step_size * math.cos(yaw)
     elif action == 5:
-        # 向右平移 5 单位（假设是沿着机体系的右方，x 正向）
         x += step_size * math.sin(yaw)
         y -= step_size * math.cos(yaw)
     elif action == 2:
-        # 顺时针旋转 10°
         yaw += math.radians(10)
     elif action == 3:
-        # 逆时针旋转 10°
         yaw -= math.radians(10)
 
-    # 保证 yaw 在 -π 到 π 之间
     yaw = (yaw + math.pi) % (2 * math.pi) - math.pi
 
-    # 返回更新后的位姿
     return [x, y, z, yaw]
 
 
 
 def get_jsonl_files_in_subfolders(directory):
-    # 存储所有的jsonl文件路径
     jsonl_files = []
     
-    # 遍历目录及其子目录
     for root, dirs, files in os.walk(directory):
         for file in files:
-            if file.endswith(".jsonl"):  # 只获取.jsonl文件
+            if file.endswith(".jsonl"): 
                 jsonl_files.append(os.path.join(root, file))
     
     return jsonl_files
@@ -290,14 +252,11 @@ def calyaw_rad(start, end):
 
 
 def main():
-    # 启动 TCP 服务器，接收相机位姿
     eval_data_directory = "/home/pjlab/workspace/lch/data_gen/UAV_VLN_Data_Gen/ros_ws/scripts/tmp_data/test1/test1.jsonl"
-    # 列表包含多个测试数据，每条数据对应一个json文件
     # test_path = ["test_path1", "test_path2", "..."]
     f = open(eval_data_directory, 'r')
     json_file = json.loads(f.read())
     print("test_path" , json_file)
-    # 测试指标
     acc = 0
     stop = 0
     acts = []
@@ -307,24 +266,15 @@ def main():
     for idx in range(len(json_file)):    
 
         obj_list = json_file[idx]['pos']
-        # print(obj_list)
         start_yaw = 0
-
-        # acts = []
-        # vec = obj_list[1]["pos"] - [0]["pos"]
-        # start_yaw = math.atan2(vec[1], vec)
-        # print(start_yaw)
         text = json_file[idx]['gpt_instrucion']
         start_postion = obj_list[0]
         second_position = obj_list[1]
         start_yaw = calyaw_rad(start_postion, second_position)
-        # start_rotation = test_path[idx]['start_rotation']
         end_position = obj_list[-1]
         print(start_postion, "   : ", end_position,"  : ", start_yaw)
-        # continue
         stop_error = 1
         image_error = False
-        # 实例化 UE5 相机控制类
         ue5_cam_center = UE5CameraCenter()
 
         new_pose = UE5CameraCenter._camera_init()
@@ -333,7 +283,6 @@ def main():
         step = 0
 
         while step < MAX_STEP:
-            #  从ue5中获取当前位置对饮的图片
             image_list.append(ue5_cam_center.get_camera_data('lit'))
             model_action = get_action(image_list, text, acts, if_his=True)
             acts.append(model_action)
