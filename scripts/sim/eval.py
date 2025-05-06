@@ -170,7 +170,7 @@ def get_images(lst,if_his,step):
                 return [lst[0],lst[0], lst[0]]
         elif step == 1:
             if len(lst) == 2:
-                return [lst[-111], lst[-2], lst[-1]]
+                return [lst[-2], lst[-2], lst[-1]]
             elif len(lst) == 1:
                 return [lst[-1], lst[-1], lst[-1]]
             
