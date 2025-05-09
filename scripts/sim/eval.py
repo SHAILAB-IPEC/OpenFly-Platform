@@ -8,6 +8,7 @@ from datetime import datetime
 import math
 import os
 import json
+import logging
 from typing import Dict, List, Optional, Union
 from pathlib import Path
 from PIL import Image
@@ -33,11 +34,18 @@ AutoConfig.register("openvla", OpenFlyConfig)
 AutoImageProcessor.register(OpenFlyConfig, PrismaticImageProcessor)
 AutoProcessor.register(OpenFlyConfig, PrismaticProcessor)
 AutoModelForVision2Seq.register(OpenFlyConfig, OpenVLAForActionPrediction)
+logging.basicConfig(filename="./save_result", level=logging.INFO, force=True)
 
 # Load Processor & VLA
 model_name_or_path="IPEC-COMMUNITY/openfly-agent-7b"
 processor = AutoProcessor.from_pretrained(model_name_or_path, trust_remote_code=True)
-vla = AutoModelForVision2Seq.from_pretrained(model_name_or_path, trust_remote_code=True, torch_dtype=torch.bfloat16).eval().cuda()
+vla = AutoModelForVision2Seq.from_pretrained(
+    model_name_or_path, 
+    attn_implementation="flash_attention_2",  # [Optional] Requires `flash_attn`
+    torch_dtype=torch.bfloat16, 
+    low_cpu_mem_usage=True, 
+    trust_remote_code=True,
+).to("cuda:0")
 
 class UE5CameraCenter:  
     def __init__(self):  
@@ -58,9 +66,9 @@ class UE5CameraCenter:
 
         '''检查是否连接'''  
         if self._client.connect():  
-            print('UnrealCV connected successfully')  
+            logging.info('UnrealCV connected successfully')  
         else:  
-            print('UnrealCV is not connected')  
+            logging.info('UnrealCV is not connected')  
             exit()
   
     def set_camera_pose(self, x, y, z, pitch, yaw, roll):  
@@ -72,7 +80,7 @@ class UE5CameraCenter:
             'location': {'x': x, 'y': y, 'z': z},  
             'rotation': {'pitch': pitch, 'yaw': yaw, 'roll': roll}  
         }  
-        print(camera_settings)
+        logging.info(camera_settings)
 
         # 设置相机的位置  
         self._client.request('vset /camera/0/location {x} {y} {z}'.format(**camera_settings['location']))
@@ -187,7 +195,6 @@ def get_action(image_list, text, his, if_his=False,his_step=0):
     
     prompt = f"In: What action should the robot take to {text}?\nOut:"
     image_list = get_images(image_list,if_his,his_step)
-    print(text)
     inputs = processor(prompt, image_list).to("cuda:0", dtype=torch.bfloat16)
     action = vla.predict_action(**inputs, unnorm_key="vln_norm", do_sample=False)
     action = action.tolist()
@@ -252,11 +259,9 @@ def calyaw_rad(start, end):
 
 
 def main():
-    eval_data_directory = "/home/pjlab/workspace/lch/data_gen/UAV_VLN_Data_Gen/ros_ws/scripts/tmp_data/test1/test1.jsonl"
-    # test_path = ["test_path1", "test_path2", "..."]
+    eval_data_directory = "test.jsonl"
     f = open(eval_data_directory, 'r')
     json_file = json.loads(f.read())
-    print("test_path" , json_file)
     acc = 0
     stop = 0
     acts = []
@@ -272,7 +277,7 @@ def main():
         second_position = obj_list[1]
         start_yaw = calyaw_rad(start_postion, second_position)
         end_position = obj_list[-1]
-        print(start_postion, "   : ", end_position,"  : ", start_yaw)
+        # print(start_postion, "   : ", end_position,"  : ", start_yaw)
         stop_error = 1
         image_error = False
         ue5_cam_center = UE5CameraCenter()
@@ -281,6 +286,7 @@ def main():
 
         image_list = []
         step = 0
+        act_num = 0
 
         while step < MAX_STEP:
             image_list.append(ue5_cam_center.get_camera_data('lit'))
@@ -306,8 +312,8 @@ def main():
         stop += stop_error
         f = stop / (data_num + 1)
         data_num += 1
-
+        logging.info(f'num_of_step:{act_num}')
+        logging.info(f'data:{idx}, success_rate:{acc_}.')
 
 if __name__ == '__main__':
     main()
-
