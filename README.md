@@ -269,7 +269,9 @@ Other hyperparameters like "batch_size", "save_steps" could be customized accord
 
 ## Evaluation 
 
-You can refer to our evaluation script scripts/sim/eval.py to evaluate your openfly-agent.
+You can refer to our evaluation script `train/eval.py` to evaluate your openfly-agent.
+
+We use the `eval_test.json` file as a demonstration to configure the environments that need to be evaluated. You can customize an evaluation configuration file based on the json files available at https://huggingface.co/datasets/IPEC-COMMUNITY/OpenFly/tree/main/Annotation
 
 ## Test
 
