@@ -55,8 +55,6 @@ class DataArguments:
 class TrainingArguments:
     
     seed: int = 7                                            
-    base_vlm: Union[str, Path] = "prism-dinosiglip-224px+7b"
-
     pretrained_checkpoint: Optional[Path] = None   
     hf_token = ""                 
     is_resume: bool = True   
@@ -154,7 +152,7 @@ def main(data_args=None, training_args=None):
         save_dataset_statistics(vla_dataset.dataset_statistics, run_dir)
 
     train_strategy = TrainingStrategy(
-        vlm=vlm,
+        vlm=model,
         device_id=device_id,
         stage=stage,
         epochs=epochs,
