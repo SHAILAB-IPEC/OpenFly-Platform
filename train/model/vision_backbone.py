@@ -11,6 +11,7 @@ from typing import Callable, Any, Dict, Optional, Protocol, Tuple, Union
 import timm
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from PIL import Image
 from timm.models.vision_transformer import Block, VisionTransformer
 from torch.distributed.fsdp.wrap import _module_wrap_policy, _or_policy, transformer_auto_wrap_policy
@@ -144,15 +145,14 @@ class DinoSigLIPViTBackbone(nn.Module):
 
     def forward(self, pixel_values: Dict[str, torch.Tensor]) -> torch.Tensor:
         """Runs the transformed image/pixel tensors through each vision backbone, returning concatenated patches."""
+        dino_patches = self.post_process(self.dino_featurizer(pixel_values['dino'][:, 0:3]), 1)
+        siglip_patches = self.post_process(self.siglip_featurizer(pixel_values['siglip'][:, 0:3]), 1)
 
-        dino_patches = self.post_process(self.dino_featurizer(pixel_values["dino"][:, 0:3])[0], 1)
-        siglip_patches = self.post_process(self.siglip_featurizer(pixel_values["siglip"][:, 0:3])[0], 1)
-
-        dino_patches_his1 = self.post_process(self.dino_featurizer(pixel_values["dino"][:, 3:6])[0], self.grid_size)
-        siglip_patches_his1 = self.post_process(self.siglip_featurizer(pixel_values["siglip"][:, 3:6])[0], self.grid_size)
+        dino_patches_his1 = self.post_process(self.dino_featurizer(pixel_values['dino'][:, 3:6]), self.grid_size)
+        siglip_patches_his1 = self.post_process(self.siglip_featurizer(pixel_values['siglip'][:, 3:6]), self.grid_size)
             
-        dino_patches_his2 = self.post_process(self.dino_featurizer(pixel_values["dino"][:, 6:9])[0], self.grid_size)
-        siglip_patches_his2 = self.post_process(self.siglip_featurizer(pixel_values["siglip"][:, 6:9])[0], self.grid_size)
+        dino_patches_his2 = self.post_process(self.dino_featurizer(pixel_values['dino'][:, 6:9]), self.grid_size)
+        siglip_patches_his2 = self.post_process(self.siglip_featurizer(pixel_values['siglip'][:, 6:9]), self.grid_size)
 
         return [torch.cat([dino_patches, siglip_patches], dim=-1), torch.cat([dino_patches_his1, siglip_patches_his1], dim=-1), torch.cat([dino_patches_his2, siglip_patches_his2], dim=-1)] 
 
@@ -175,19 +175,12 @@ class DinoSigLIPViTBackbone(nn.Module):
         return torch.bfloat16
 
     def post_process(self, tensorA, grid_size, HW=16):
-        # 假设 tensorB 已经定义为 (B=32, 256, C=4096)
         B, _, C = tensorA.size()
-        # 将 tensorB 重新 reshape 成 (B, 16, 16, C)
         tensorA_like = tensorA.view(B, HW, HW, C)
-
-        # 对 tensorA_like 在 2, 3 维上进行 2x2 的 max pooling，得到 (B, 8, 8, C)
         pooled_tensorA = F.avg_pool2d(tensorA_like.permute(0, 3, 1, 2), padding=0, kernel_size=grid_size)
-
-        # 将 pooled_tensorA reshape 成 (B, -1, C)，即 (B, 16, C)
         result = pooled_tensorA.permute(0, 2, 3, 1).flatten(1,2)
-
-        # 打印结果的维度
         return result
 
     def get_image_transform(self) -> ImageTransform:
         return self.image_transform
+
