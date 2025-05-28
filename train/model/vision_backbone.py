@@ -145,8 +145,8 @@ class DinoSigLIPViTBackbone(nn.Module):
     def forward(self, pixel_values: Dict[str, torch.Tensor]) -> torch.Tensor:
         """Runs the transformed image/pixel tensors through each vision backbone, returning concatenated patches."""
 
-        dino_patches = self.post_process(self.dino_featurizer(pixel_values["dino"][:, 3:6])[0], 1)
-        siglip_patches = self.post_process(self.siglip_featurizer(pixel_values["siglip"][:, 3:6])[0], 1)
+        dino_patches = self.post_process(self.dino_featurizer(pixel_values["dino"][:, 0:3])[0], 1)
+        siglip_patches = self.post_process(self.siglip_featurizer(pixel_values["siglip"][:, 0:3])[0], 1)
 
         dino_patches_his1 = self.post_process(self.dino_featurizer(pixel_values["dino"][:, 3:6])[0], self.grid_size)
         siglip_patches_his1 = self.post_process(self.siglip_featurizer(pixel_values["siglip"][:, 3:6])[0], self.grid_size)
