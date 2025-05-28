@@ -170,7 +170,7 @@ def get_vla_dataset_and_collator(
     """Initialize RLDS Dataset (wraps TFDS), ActionTokenizer, and initialize transform/collation functions."""
     action_tokenizer = ActionTokenizer(tokenizer)
     batch_transform = RLDSBatchTransform(
-        action_tokenizer, tokenizer, predict_stop_token=predict_stop_token
+        action_tokenizer, tokenizer, image_transform, predict_stop_token=predict_stop_token
     )
     collator = PaddedCollatorForActionPrediction(
         tokenizer.model_max_length, tokenizer.pad_token_id, padding_side=padding_side
