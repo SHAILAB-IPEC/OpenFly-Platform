@@ -33,7 +33,7 @@ class LLaMa2LLMBackbone(nn.Module):
 
         # Get model configuration from preset
         # hf_hub_path = model_config["hf_hub_path"]
-        hf_hub_path = "meta-llama/llama2-7b"
+        hf_hub_path = "meta-llama/llama2-7b-hf"
 
         # Model initialization
         if not inference_mode:
