@@ -158,7 +158,7 @@ def load_vla(
         # Search HF Hub Repo via fsspec API
         overwatch.info(f"Checking HF for `{(hf_path := str(Path(VLA_HF_HUB_REPO) / model_type / model_id_or_path))}`")
         if not (tmpfs := HfFileSystem()).exists(hf_path):
-            raise ValueError(f"Couldn't find valid HF Hub Path `{hf_path = }`")
+            raise ValueError("Couldn't find valid HF Hub Path")
 
         # Identify Checkpoint to Load (via `step_to_load`)
         step_to_load = f"{step_to_load:06d}" if step_to_load is not None else None
