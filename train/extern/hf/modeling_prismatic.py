@@ -138,15 +138,9 @@ class PrismaticVisionBackbone(nn.Module):
 #         return torch.cat([patches, patches_fused], dim=2)
  
     def post_process(self, tensorA, grid_size):
-        # 假设 tensorB 已经定义为 (B=32, 256, C=4096)
         B, _, C = tensorA.size()
-        # 将 tensorB 重新 reshape 成 (B, 16, 16, C)
         tensorA_like = tensorA.view(B, 16, 16, C)
-
-        # 对 tensorA_like 在 2, 3 维上进行 2x2 的 max pooling，得到 (B, 8, 8, C)
         pooled_tensorA = F.avg_pool2d(tensorA_like.permute(0, 3, 1, 2), kernel_size=grid_size)
-
-        # 将 pooled_tensorA reshape 成 (B, -1, C)，即 (B, 16, C)
         result = pooled_tensorA.permute(0, 2, 3, 1).flatten(1,2)
 
         return result
