@@ -4,7 +4,7 @@ datasets.py
 Lightweight PyTorch Dataset Definition for wrapping RLDS TFDS Pipeline; just defines transform from RLDS default
 format to OpenVLA, IterableDataset shim.
 """
-
+import copy
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Tuple, Union, List, Optional, Callable
@@ -15,12 +15,12 @@ import torch
 import dlimp as dl
 from functools import partial
 from PIL import Image
+from model import DinoSigLIPImageTransform
 from torch.utils.data import Dataset, IterableDataset
 from transformers import PreTrainedTokenizerBase
 import tensorflow as tf
 import tensorflow_datasets as tfds
 import json
-from model import DinoSigLIPImageTransform 
 from model.action_tokenizer import ActionTokenizer
 from datasets.data_utils import (
     NormalizationType,
@@ -29,7 +29,10 @@ from datasets.data_utils import (
     get_dataset_statistics,
     normalize_action_and_proprio,
     pprint_data_mixture,
-    
+    decode_and_resize,
+    add_pad_mask_dict,
+    chunk_act_obs,
+    subsample,
 )
 
 from model.prompt_llama2 import LLaMa2ChatPromptBuilder
@@ -134,9 +137,8 @@ def make_dataset_from_rlds(
 
     def restructure(traj):
         # apply a standardization function, if provided
-        # if standardize_fn is not None:
-        #     traj = standardize_fn(traj)
-
+        if standardize_fn is not None:
+            traj = standardize_fn(traj)
 
         if not all(k in traj for k in REQUIRED_KEYS):
             raise ValueError(
@@ -259,6 +261,166 @@ def make_dataset_from_rlds(
     return dataset, dataset_statistics
 
 
+def apply_trajectory_transforms(
+    dataset: dl.DLataset,
+    *,
+    train: bool,
+    goal_relabeling_strategy: Optional[str] = None,
+    goal_relabeling_kwargs: dict = {},
+    window_size: int = 1,
+    future_action_window_size: int = 0,
+    subsample_length: Optional[int] = None,
+    skip_unlabeled: bool = False,
+    max_action: Optional[float] = None,
+    max_proprio: Optional[float] = None,
+    task_augment_strategy: Optional[str] = None,
+    task_augment_kwargs: dict = {},
+    num_parallel_calls: int = tf.data.AUTOTUNE,
+) -> dl.DLataset:
+    """
+    Applies common transforms that happen at a trajectory level. Such transforms are usually some sort of "relabeling"
+    (e.g., filtering, chunking, adding goals, dropping keys).
+
+    Transforms in this function should have the following properties:
+        - They require access to an entire trajectory (i.e., they cannot be applied frame-wise).
+        - They are generally not CPU-intensive, mostly involving moving and copying data.
+        - They do not require decoded images.
+
+    Args:
+        dataset (dl.DLataset): The dataset to transform.
+        train (bool): Whether the dataset is for training (affects subsampling).
+        goal_relabeling_strategy (str, optional): The goal relabeling strategy to use, or None for
+            no goal relabeling. See `goal_relabeling.py`.
+        goal_relabeling_kwargs (dict, optional): Additional keyword arguments to pass to the goal relabeling function.
+        window_size (int, optional): The length of the snippets that trajectories are chunked into.
+        future_action_window_size (int, optional): The number of future actions beyond window_size to include
+            in the chunked actions.
+        subsample_length (int, optional): If provided, trajectories longer than this will be subsampled to
+            this length (after goal relabeling and chunking).
+        skip_unlabeled (bool, optional): Whether to skip trajectories with no language labels.
+        max_action: (float, optional): If provided, trajectories in which *any* action dimension
+            of *any* transition has an absolute value larger than this will be skipped.
+        max_proprio: (float, optional): If provided, trajectories in which *any* proprio dimension
+            of *any* transition has an absolute value larger than this will be skipped.
+        task_augment_strategy (str, optional): The task augmentation strategy to use, or None for no task
+            augmentation. See `task_augmentation.py`.
+        task_augment_kwargs (dict, optional): Additional keyword arguments to pass to the task augmentation
+            function.
+        num_parallel_calls (int, optional): number of parallel calls for map operations. Default to AUTOTUNE.
+    """
+    if skip_unlabeled:
+        if "language_instruction" not in dataset.element_spec["task"]:
+            raise ValueError("skip_unlabeled=True but dataset does not have language labels.")
+
+        dataset = dataset.filter(lambda x: tf.math.reduce_any(x["task"]["language_instruction"] != ""))
+
+    if max_action is not None:
+        dataset = dataset.filter(lambda x: tf.math.reduce_all(tf.math.abs(x["action"]) <= max_action))
+
+    if max_proprio is not None and "proprio" in dataset.element_spec["observation"]:
+        dataset = dataset.filter(lambda x: tf.math.reduce_all(tf.math.abs(x["observation"]["proprio"]) <= max_proprio))
+
+    # marks which entires of the observation and task dicts are padding
+    dataset = dataset.traj_map(add_pad_mask_dict, num_parallel_calls)
+
+    # updates the "task" dict
+    if goal_relabeling_strategy is not None:
+        dataset = dataset.traj_map(
+            partial(getattr(goal_relabeling, goal_relabeling_strategy), **goal_relabeling_kwargs),
+            num_parallel_calls,
+        )
+
+    # must run task augmentation before chunking, in case it changes goal timesteps
+    if train and task_augment_strategy is not None:
+        # perform task augmentation (e.g., dropping keys)
+        dataset = dataset.traj_map(
+            partial(
+                getattr(task_augmentation, task_augment_strategy),
+                **task_augment_kwargs,
+            ),
+            num_parallel_calls,
+        )
+
+    # chunks observations and actions, giving them a new axis at index 1 of size `window_size` and
+    # `window_size + future_action_window_size`, respectively
+    dataset = dataset.traj_map(
+        partial(
+            chunk_act_obs,
+            window_size=window_size,
+            future_action_window_size=future_action_window_size,
+        ),
+        num_parallel_calls,
+    )
+
+    if train and subsample_length is not None:
+        dataset = dataset.traj_map(
+            partial(subsample, subsample_length=subsample_length),
+            num_parallel_calls,
+        )
+
+    return dataset
+
+def apply_per_dataset_frame_transforms(
+    dataset: dl.DLataset,
+    chunk_filter_fn: Optional[Callable] = None,
+):
+    """
+    Optionally applied *per-dataset* transforms that happen at a frame level.
+
+    Args:
+        chunk_filter_fn (callable, optional): Filter function for chunks.
+    """
+    if chunk_filter_fn:
+        dataset = dataset.filter(chunk_filter_fn)
+    return dataset
+    
+def apply_frame_transforms(
+    dataset: dl.DLataset,
+    *,
+    train: bool,
+    image_augment_kwargs: Union[Dict, Dict[str, Dict]] = {},
+    resize_size: Union[Tuple[int, int], Dict[str, Tuple[int, int]]] = {},
+    depth_resize_size: Union[Tuple[int, int], Dict[str, Tuple[int, int]]] = {},
+    num_parallel_calls: int = tf.data.AUTOTUNE,
+) -> dl.DLataset:
+    """
+    Applies common transforms that happen at a frame level. These transforms are usually more CPU-intensive, (e.g.,
+    decoding or resizing images).
+
+    Args:
+        train (bool): Whether the dataset is for training (affects image augmentation).
+        dataset (dl.DLataset): The dataset to transform.
+        image_augment_kwargs (dict|Mapping[str, dict]): Keyword arguments to pass to the image augmentation
+            function. See `dlimp.transforms.augment_image` for documentation of these kwargs. If a dict of
+            dicts is provided, then key "k" will be used for "image_{k}" (names determined by `image_obs_keys`
+            in `make_dataset_from_rlds`). Augmentation will be skipped for missing keys (so pass an empty dict
+            to skip augmentation for all images).
+        resize_size (Tuple[int, int]|Mapping[str, Tuple[int, int]]): If provided, images will be resized to
+            this size. If a dict of tuples is provided, then key "k" will be used for "image_{k}" (names
+            determined by `image_obs_keys` in `make_dataset_from_rlds`). Resizing will be skipped for missing
+            keys (so pass an empty dict to skip resizing for all images).
+        depth_resize_size (Tuple[int, int]|Mapping[str, Tuple[int, int]]): Same as resize_size, but for depth
+            images.
+        num_parallel_calls (int): number of parallel calls for frame_map operations. Default to AUTOTUNE.
+    """
+
+    # Convenience wrapper that takes a function that operates on a non-chunked "observation" dict and applies
+    # it to the chunked "observation" dict as well as the non-chunked "task" dict
+    def apply_obs_transform(fn: Callable[[Dict], Dict], frame: Dict) -> Dict:
+        frame["task"] = fn(frame["task"])
+        frame["observation"] = dl.vmap(fn)(frame["observation"])
+        return frame
+
+    # Decode + resize images (and depth images)
+    dataset = dataset.frame_map(
+        partial(
+            apply_obs_transform,
+            partial(decode_and_resize, resize_size=resize_size, depth_resize_size=depth_resize_size),
+        ),
+        num_parallel_calls,
+    )
+
+    return dataset
 # === Core Initializer ===
 def make_interleaved_dataset(
     dataset_kwargs_list: List[Dict],
@@ -309,9 +471,8 @@ def make_interleaved_dataset(
 
     # Get Dataset Sizes
     dataset_sizes, all_dataset_statistics = [], {}
-
     for dataset_kwargs in dataset_kwargs_list:
-        data_kwargs = deepcopy(dataset_kwargs)
+        data_kwargs = copy.deepcopy(dataset_kwargs)
         if "dataset_frame_transform_kwargs" in data_kwargs:
             data_kwargs.pop("dataset_frame_transform_kwargs")
         _, dataset_statistics = make_dataset_from_rlds(**data_kwargs, train=train)
@@ -319,7 +480,8 @@ def make_interleaved_dataset(
         all_dataset_statistics[dataset_kwargs["name"]] = dataset_statistics
 
     # Get the indices of the "primary" datasets (i.e., datasets with sample_weight == 1.0)
-    primary_dataset_indices = np.array([idx for idx in range(len(sample_weights)) if sample_weights[idx] == 1.0]) 
+    primary_dataset_indices = np.array([idx for idx in range(len(sample_weights)) if sample_weights[idx] == 1.0])
+
     # Balance and Normalize Weights
     if balance_weights:
         sample_weights = np.array(sample_weights) * np.array(dataset_sizes)
@@ -357,6 +519,13 @@ def make_interleaved_dataset(
             num_parallel_reads=reads,
             dataset_statistics=all_dataset_statistics[dataset_kwargs["name"]],
         )
+        dataset = apply_trajectory_transforms(
+            dataset.repeat(),
+            **traj_transform_kwargs,
+            num_parallel_calls=threads,
+            train=train,
+        ).flatten(num_parallel_calls=threads)
+        dataset = apply_per_dataset_frame_transforms(dataset, **dataset_frame_transform_kwargs)
         datasets.append(dataset)
 
     # Interleave at the Frame Level
@@ -372,6 +541,7 @@ def make_interleaved_dataset(
 
     # Apply Frame Transforms
     overwatch.info("Applying frame transforms on dataset...")
+    dataset = apply_frame_transforms(dataset, **frame_transform_kwargs, train=train)
 
     # [Contract] When training VLA Policies, we let the Collator handle Batching!
     if batch_size is not None:
@@ -385,6 +555,30 @@ def make_interleaved_dataset(
 
     return dataset, dataset_len, all_dataset_statistics
 
+def vln_transform(trajectory: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Applies to original version of Bridge V2 from the official project website.
+
+    Note =>> In original Bridge V2 dataset, the first timestep has an all-zero action, so we remove it!
+    """
+   
+    for key in trajectory.keys():
+        if key == "traj_metadata":
+            continue
+        elif key == "observation":
+            for key2 in trajectory[key]:
+                trajectory[key][key2] = trajectory[key][key2][1:]
+        else:
+            trajectory[key] = trajectory[key][1:]
+
+    trajectory["action"] = tf.concat(
+        [
+            trajectory["action"][:, :3],
+            trajectory["action"][:, 3:],
+        ],
+        axis=1,
+    )
+    return trajectory
 
 def make_oxe_dataset_kwargs(
     dataset_name: str,
@@ -397,7 +591,7 @@ def make_oxe_dataset_kwargs(
 ) -> Dict[str, Any]:
     """Generates config (kwargs) for given dataset from Open-X Embodiment."""
     dataset_kwargs = {
-        "image_obs_keys": {"primary": "image_1", "secondary": "image_2", "wrist": "image_3", "forth": "image_4",},
+        "image_obs_keys": {"primary": "image_1", "secondary": "image_2", "wrist": "image_3",},
         "depth_obs_keys": {"primary": None, "secondary": None, "wrist": None},
         "state_obs_keys": ["base_pose_tool_reached", "gripper_closed"],
         "state_encoding": 2,
@@ -428,6 +622,9 @@ def make_oxe_dataset_kwargs(
     # Load Language
     if load_language:
         dataset_kwargs["language_key"] = "language_instruction"
+
+    # Specify Standardization Transform
+    dataset_kwargs["standardize_fn"] = vln_transform
 
     # Add any aux arguments
     if "aux_kwargs" in dataset_kwargs:
@@ -494,16 +691,19 @@ def get_oxe_dataset_kwargs_and_weights(
 class RLDSBatchTransform:
     action_tokenizer: ActionTokenizer
     base_tokenizer: PreTrainedTokenizerBase
+    image_transform: DinoSigLIPImageTransform
     predict_stop_token: bool = True
 
     def __call__(self, rlds_batch: Dict[str, Any]) -> Dict[str, Any]:
         """Converts a RLDS batch to the format expected by the OpenVLA collator/models."""
         dataset_name, action = rlds_batch["dataset_name"], rlds_batch["action"][0]
-        img = Image.fromarray(rlds_batch["observation"]["image_primary"][0])
+        img_cur = Image.fromarray(rlds_batch["observation"]["image_primary"][0])
+        img_past1 = Image.fromarray(rlds_batch["observation"]["image_secondary"][0])
+        img_past2 = Image.fromarray(rlds_batch["observation"]["image_wrist"][0])
         lang = rlds_batch["task"]["language_instruction"].decode().lower()
 
         # Construct Chat-based Prompt =>> Input is default query + language instruction, output are the action tokens
-        prompt_builder = LLaMa2ChatPromptBuilder("openfly")
+        prompt_builder = LLaMa2ChatPromptBuilder("prismatic")
         conversation = [
             {"from": "human", "value": f"What action should the robot take to {lang}?"},
             {"from": "gpt", "value": self.action_tokenizer(action)},
@@ -518,8 +718,15 @@ class RLDSBatchTransform:
         # Tensorize =>> Run Image Transform to get `pixel_values` =>> Return
         #   =>> IMPORTANT :: IF WE'RE USING HF LLM.forward(..., labels=labels), SHIFTING HAPPENS _INSIDE_ MODEL!
         input_ids, labels = torch.tensor(input_ids), torch.tensor(labels)
-        pixel_values = DinoSigLIPImageTransform(img)
 
+        tr_img_cur, tr_pst1, tr_pst2 = self.image_transform(img_cur), self.image_transform(img_past1), self.image_transform(img_past2)# , self.image_transform(img_past3),
+        pixel_values = {
+                k: torch.cat(
+                      (tr_img_cur[k], tr_pst1[k], tr_pst2[k]), dim=0  # , tr_pst3[k]
+                )
+                for k in tr_img_cur.keys()
+            }
+            
         # [CRITICAL] We do not want to take the loss for anything but the predicted action tokens!
         labels[: -(len(action) + 1)] = IGNORE_INDEX
         if not self.predict_stop_token:
@@ -544,8 +751,7 @@ class RLDSDataset(IterableDataset):
 
         OXE_NAMED_MIXTURES: Dict[str, List[Tuple[str, float]]] = {
             "vln_mix" : [                                  
-                ("vln_scene1", 1.0),                            
-                ("vln_scene2", 1.0),
+                ("vln_norm", 1.0),                            
             ],
         }
 
@@ -555,7 +761,7 @@ class RLDSDataset(IterableDataset):
         per_dataset_kwargs, weights = get_oxe_dataset_kwargs_and_weights(
             self.data_root_dir,
             mixture_spec,
-            load_camera_views=("primary",),
+            load_camera_views= ("primary", "secondary", "wrist",),
             load_depth=False,
             load_proprio=False,
             load_language=True,
