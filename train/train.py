@@ -78,7 +78,8 @@ class TrainingArguments:
     train_strategy: str = "fsdp-full-shard"  
     enable_gradient_checkpointing: bool = True      
     enable_mixed_precision_training: bool = True    
-    reduce_in_full_precision: bool = True           
+    reduce_in_full_precision: bool = True       
+    mixed_precision_dtype: torch.dtype = torch.bfloat16
 
     grid_size: int = 16
     history_frames: int = 2
