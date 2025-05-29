@@ -161,14 +161,7 @@ class PrismaticVLM(VLM):
 
         # Initialize Projection (Adapter) based on `arch_specifier`
         self.arch_specifier = arch_specifier
-        if arch_specifier == "linear":
-            self.projector = LinearProjector(vision_backbone.embed_dim, llm_backbone.embed_dim)
-        elif arch_specifier.endswith("fused-gelu-mlp"):
-            self.projector = FusedMLPProjector(vision_backbone.embed_dim, llm_backbone.embed_dim)
-        elif arch_specifier.endswith("gelu-mlp"):
-            self.projector = MLPProjector(vision_backbone.embed_dim, llm_backbone.embed_dim)
-        else:
-            raise ValueError(f"PrismaticVLM with `{arch_specifier = }` is not supported!")
+        self.projector = FusedMLPProjector(vision_backbone.embed_dim, llm_backbone.embed_dim)
 
         # Trackers
         self.vision_backbone_requires_grad = False
@@ -365,7 +358,7 @@ class PrismaticVLM(VLM):
         # Get Prismatic Wrapping Policy =>> just a module wrapping policy around `self.projector`
         prismatic_fsdp_wrapping_policy = partial(
             _module_wrap_policy,
-            module_classes={LinearProjector, MLPProjector, FusedMLPProjector},
+            module_classes={FusedMLPProjector},
         )
 
         # Return union (_or_) over constituent policies
