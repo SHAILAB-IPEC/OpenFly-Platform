@@ -110,7 +110,7 @@ colcon build --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
     ```
     Due to the GPU-intensive nature of rendering in UE projects, we start it in headless mode. If you want to view the UE rendering screen, please comment out the headless-related code in `envs/ue/env_ue_xxx/CitySample.sh`. Note that this may cause the rendering interface to crash.
 
-2. For GTAV(Coming soon，The game update caused a bug.)
+2. For GTAV
    - ```pip install pyautogui```
    - Clone the DeepGTAV repo, put the compiled plugin to the root directory of GTAV.
    - Start GTA V and enter story mode. Change camera to First-per view (by pressing V) (preferred)
