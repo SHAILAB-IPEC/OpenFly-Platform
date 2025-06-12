@@ -17,12 +17,11 @@ from transformers.modeling_outputs import CausalLMOutputWithPast
 from model.config import OpenFlyConfig
 from model.overwatch import initialize_overwatch
 from model.load_model import load_vla
+from datasets import save_dataset_statistics
 from datasets import get_vla_dataset_and_collator, make_dataset_from_rlds, make_interleaved_dataset, get_oxe_dataset_kwargs_and_weights
-
 
 from model.strategy import TrainingStrategy
 from model.metrics import VLAMetrics
-from prismatic.vla.datasets.rlds.utils.data_utils import save_dataset_statistics
 
 
 
