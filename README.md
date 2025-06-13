@@ -324,7 +324,7 @@ inputs = processor(prompt, [image, image, image]).to("cuda:0", dtype=torch.bfloa
 action = model.predict_action(**inputs, unnorm_key="vln_norm", do_sample=False)
 print(action)
 ```
-##Citation
+## Citation
 ```
 @article{OpenFly,
   author       = {Yunpeng Gao and
