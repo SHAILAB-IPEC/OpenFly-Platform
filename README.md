@@ -324,6 +324,43 @@ inputs = processor(prompt, [image, image, image]).to("cuda:0", dtype=torch.bfloa
 action = model.predict_action(**inputs, unnorm_key="vln_norm", do_sample=False)
 print(action)
 ```
+##Citation
+```
+@article{OpenFly,
+  author       = {Yunpeng Gao and
+                  Chenhui Li and
+                  Zhongrui You and
+                  Junli Liu and
+                  Zhen Li and
+                  Pengan Chen and
+                  Qizhi Chen and
+                  Zhonghan Tang and
+                  Liansheng Wang and
+                  Penghui Yang and
+                  Yiwen Tang and
+                  Yuhang Tang and
+                  Shuai Liang and
+                  Songyi Zhu and
+                  Ziqin Xiong and
+                  Yifei Su and
+                  Xinyi Ye and
+                  Jianan Li and
+                  Yan Ding and
+                  Dong Wang and
+                  Zhigang Wang and
+                  Bin Zhao and
+                  Xuelong Li},
+  title        = {OpenFly: A Comprehensive Platform for Aerial Vision-Language Navigation},
+  journal      = {CoRR},
+  volume       = {abs/2502.18041},
+  year         = {2025}
+}
+```
+
+
 
 ## License
+
+
+
 
