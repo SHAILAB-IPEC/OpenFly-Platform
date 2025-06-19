@@ -1,4 +1,16 @@
 
+from unrealcv import Client  
+import cv2  
+import numpy as np  
+import io
+import time
+import math
+import subprocess, threading
+import airsim
+from common import *
+import psutil
+import requests
+import random
 import numpy as np
 import torch
 from PIL import Image
@@ -13,22 +25,6 @@ AutoConfig.register("openvla", OpenFlyConfig)
 AutoImageProcessor.register(OpenFlyConfig, PrismaticImageProcessor)
 AutoProcessor.register(OpenFlyConfig, PrismaticProcessor)
 AutoModelForVision2Seq.register(OpenFlyConfig, OpenVLAForActionPrediction)
-
-
-from unrealcv import Client  
-import cv2  
-import numpy as np  
-import io
-import time
-import math
-import subprocess, threading
-import airsim
-from common import *
-import psutil
-import requests
-import random
-
-
 
 
 def kill_env_process(keyword):
@@ -49,6 +45,13 @@ class AirsimBridge:
         self._client.enableApiControl(True)
         self._client.armDisarm(True)
 
+        self.distance_to_goal = []
+        self.spl = []
+        self.success = []
+        self.traj_len = 0
+        self.pass_len = 1e-3
+        self.osr = []
+
     def _init_airsim_sim(self):
         env_dir = "envs/airsim/" + self.env_name
 
@@ -60,6 +63,9 @@ class AirsimBridge:
         stdout, stderr = self.process.communicate()
         # print("Command output:\n", stdout)
 
+    def print_info(self):
+        print(f"SR: {self.success[-1]}, OSR: {self.osr[-1]}, NE: {self.distance_to_goal[-1]}, SPL: {self.spl[-1]}")
+        return f"SR: {self.success[-1]}, OSR: {self.osr[-1]}, NE: {self.distance_to_goal[-1]}, SPL: {self.spl[-1]}"
     def set_camera_pose(self, x, y, z, pitch, yaw, roll):
         target_pose = airsim.Pose(airsim.Vector3r(x, -y, -z),
                                   airsim.to_quaternion(math.radians(pitch), 0, math.radians(-yaw)))
@@ -138,7 +144,18 @@ class UEBridge:
         self._connection_check()
 
         self._camera_init()
-        print("cam init")
+
+        # self._drone_init()  
+        self.distance_to_goal = []
+        self.spl = []
+        self.success = []
+        self.traj_len = 0
+        self.pass_len = 1e-3
+        self.osr = []
+
+    def print_info(self):
+        print(f"SR: {self.success[-1]}, OSR: {self.osr[-1]}, NE: {self.distance_to_goal[-1]}, SPL: {self.spl[-1]}")
+        return f"SR: {self.success[-1]}, OSR: {self.osr[-1]}, NE: {self.distance_to_goal[-1]}, SPL: {self.spl[-1]}"
 
     def find_available_port(self):
         port = 9000
@@ -251,7 +268,18 @@ class GSBridge:
         self._sim_thread.start()
         self.url = "http://localhost:18080/render"
         time.sleep(10)
-  
+
+        self.distance_to_goal = []
+        self.spl = []
+        self.success = []
+        self.traj_len = 0
+        self.pass_len = 1e-3
+        self.osr = []
+
+    def print_info(self):
+        print(f"SR: {self.success[-1]}, OSR: {self.osr[-1]}, NE: {self.distance_to_goal[-1]}, SPL: {self.spl[-1]}")
+        return f"SR: {self.success[-1]}, OSR: {self.osr[-1]}, NE: {self.distance_to_goal[-1]}, SPL: {self.spl[-1]}"
+
     def _init_gs_sim(self):
         # dataset_dir = "envs/gs/" + self.env_name  
         dataset_dir = "/media/pjlabrl/hdd/all_files_relate_to_3dgs/reconstruction_result/nwpu02"
@@ -353,8 +381,6 @@ class GSBridge:
 
     def process_camera_data(self, file_path):
         pass
-
-
 
 
 
@@ -549,8 +575,11 @@ def main():
                 0
             )
             
-            image_list = []
             step = 0
+            flag_osr = 0
+            image_list = []
+            env_bridge.pass_len = 1e-3
+            old_pose = new_pose
             
             while step < MAX_STEP:
                 try:
@@ -571,7 +600,13 @@ def main():
                         np.rad2deg(new_pose[3]), 
                         0
                     )
-                    
+                    env_bridge.pass_len += calculate_distance(old_pose, new_pose)
+                    dis = calculate_distance(end_position, new_pose)
+                    if dis < 20 and flag_osr != 2:
+                        flag_osr = 2
+                        env_bridge.osr.append(1)
+                    old_pose = new_pose
+
                     if model_action == 0:
                         stop_error = 0
                         break
@@ -580,20 +615,23 @@ def main():
                     print(f"Error processing image: {e}")
                     image_error = True
                     break
-            
+
+            dis = calculate_distance(end_position, new_pose)
+            env_bridge.traj_len = calculate_distance(end_position, start_postion)
+            env_bridge.distance_to_goal.append(dis)
+            if dis < 20:
+                env_bridge.success.append(1)
+                env_bridge.spl.append(env_bridge.traj_len / env_bridge.pass_len)
+            else:
+                env_bridge.success.append(0)
+                env_bridge.spl.append(0)
+            if flag_osr == 0:
+                env_bridge.osr.append(0)
+            env_bridge.print_info()
+
             if image_error:
                 continue
                 
-            model_end_position = new_pose
-            dis = calculate_distance(end_position, model_end_position)
-            
-            if dis <= 20:
-                acc += 1
-            
-            stop += stop_error
-            data_num += 1
-            
-            print(f"Current accuracy: {acc/data_num:.4f}, Stop rate: {1-stop/data_num:.4f}, Evaluated: {data_num} samples")
         
         # Clean up environment resources
         print(f"Completed evaluation of environment {env_name}")
