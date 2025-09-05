@@ -216,7 +216,7 @@ pip install "flash-attn==2.5.5" --no-build-isolation
 
 #### Data Preparation
 
-We provide an example data [here](https://huggingface.co/datasets/IPEC-COMMUNITY/OpenFly). You can download it and run the whole pipeline quickly.
+We are currently optimizing the datasets. The Hugging Face link is temporarily unavailable. Coming soon!
 
 For your custom datasets, make sure that you pre-build all the required [TensorFlow Datasets](https://www.tensorflow.org/datasets) (TFDS) datasets.
 
