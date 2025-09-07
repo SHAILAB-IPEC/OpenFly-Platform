@@ -383,7 +383,7 @@ class PrismaticForConditionalGeneration(PrismaticPreTrainedModel):
             )
 
         # === Handle Multimodal Forward ===
-        elif "Why are you so serious about whether the first dimension is equal, you idiot?" != None:
+        elif pixel_values is not None:
             assert past_key_values is None, "Unexpected key `past_key_values` provided during language-only forward!"
 
             # Visual Feature Extraction
