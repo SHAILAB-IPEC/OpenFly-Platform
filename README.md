@@ -265,7 +265,7 @@ We released our pretrained weights of Openfly-Agent which is trained by full fin
 #### Result on airsim Scenes
 
 We have listed the results for each AirSim scenes in the table below for comparison.
-<table>  <tr>    <th colspan="1">name</th>    <th colspan="1">SR</th>    <th colspan="1">OSR</th>    <th colspan="1">NE</th>    <th colspan="1">SPL</th>  </tr>  <tr>    <td>env_airsim_16</td>    <td>41.1%</td>    <td>55.8%</td>    <td>82.6m</td>    <td>18.7%</td>  </tr>  <tr>    <td>env_airsim_18</td>    <td>18%</td>    <td>44%</td>    <td>144.7m</td>    <td>7%</td>  </tr>  <tr>    <td>env_airsim_26</td>    <td>25.7%</td>    <td>54.3%</td>    <td>130.12m</td>    <td>2.9%</td>  </tr>   <tr>    <td>env_airsim_gz</td>    <td>30.4%</td>    <td>63.5%</td>    <td>73.1m</td>    <td>14.5%</td>  </tr>   <tr>    <td>env_airsim_sh</td>    <td>28.1%</td>    <td>54.3%</td>    <td>108.4m</td>    <td>16.5%</td>  </tr></table>
+<table>  <tr>    <th colspan="1">name</th>    <th colspan="1">SR</th>    <th colspan="1">OSR</th>    <th colspan="1">NE</th>    <th colspan="1">SPL</th>  </tr>  <tr>    <td>env_airsim_16</td>    <td>41.1%</td>    <td>55.8%</td>    <td>82.6m</td>    <td>18.7%</td>  </tr>  <tr>    <td>env_airsim_18</td>    <td>32.0%</td>    <td>44%</td>    <td>144.7m</td>    <td>7%</td>  </tr>  <tr>    <td>env_airsim_26</td>    <td>25.7%</td>    <td>54.3%</td>    <td>130.12m</td>    <td>2.9%</td>  </tr>   <tr>    <td>env_airsim_gz</td>    <td>30.4%</td>    <td>63.5%</td>    <td>73.1m</td>    <td>14.5%</td>  </tr>   <tr>    <td>env_airsim_sh</td>    <td>28.1%</td>    <td>54.3%</td>    <td>108.4m</td>    <td>16.5%</td>  </tr></table>
 
 #### Train
 
