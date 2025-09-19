@@ -293,6 +293,7 @@ from typing import Dict, List, Optional, Union
 from pathlib import Path
 import numpy as np
 import torch
+import cv2
 from PIL import Image
 from transformers import LlamaTokenizerFast
 from transformers import AutoConfig, AutoImageProcessor, AutoModelForVision2Seq, AutoProcessor
