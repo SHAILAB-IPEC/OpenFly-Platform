@@ -115,7 +115,7 @@ colcon build --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
    - Clone the DeepGTAV repo, put the compiled plugin to the root directory of GTAV.
    - Start GTA V and enter story mode. Change camera to First-per view (by pressing V) (preferred)
    - In settings, set the screen resolution to "7680x4320DSR" and place the window on top-left corner of your screen
-   - Run eval.py for evaluation.
+   - Run [eval_gtav.py](https://github.com/SHAILAB-IPEC/OpenFly-Platform/blob/main/train/eval_gtav.py) for evaluation.
 
 ## Toolchain
 
