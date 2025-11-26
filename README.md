@@ -216,7 +216,7 @@ pip install "flash-attn==2.5.5" --no-build-isolation
 
 #### Data Preparation
 
-We are currently optimizing the datasets. The Hugging Face link is temporarily unavailable. Coming soon!
+The dataset we use for finetuning openfly-agent is available at [here](https://huggingface.co/datasets/IPEC-COMMUNITY/OpenFly/tree/main).
 
 For your custom datasets, make sure that you pre-build all the required [TensorFlow Datasets](https://www.tensorflow.org/datasets) (TFDS) datasets.
 
