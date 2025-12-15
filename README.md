@@ -274,6 +274,24 @@ The training script are [`train/train.sh`](./train/train.sh). And you need to ch
 Other hyperparameters like "batch_size", "save_steps" could be customized according to your computation resources.
 
 ## Evaluation 
+For ease of comparison, the evaluation results for each scene are shown in the table below.
+
+| Scene        | NE/m  | SR/%  | OSR/% | SPL/% |
+| ------------ | ----- | ----- | ----- | ----- |
+| airsim_16    | 80.3  | 0.42  | 0.572 | 0.172 |
+| airsim_18    | 77.4  | 0.394 | 0.655 | 0.27  |
+| airsim_26    | 113.9 | 0.307 | 0.559 | 0.152 |
+| airsim_gz    | 89.9  | 0.32  | 0.635 | 0.172 |
+| airsim_sh    | 100.2 | 0.3   | 0.571 | 0.165 |
+| airsim_23    | 138.6 | 0.24  | 0.635 | 0.21  |
+| ue_bigcity   | 133.9 | 0.352 | 0.8   | 0.265 |
+| nwpu01       | 75.16 | 0.333 | 0.623 | 0.302 |
+| nwpu02       | 66.9  | 0.438 | 0.704 | 0.408 |
+| sjtu01       | 85.09 | 0.317 | 0.598 | 0.319 |
+| ecust        | 67.13 | 0.351 | 0.72  | 0.305 |
+| stju02       | 129.4 | 0.225 | 0.539 | 0.224 |
+| ue_smallcity | 164.4 | 0.262 | 0.688 | 0.18  |
+| GTA          | 167.2 | 0.19  | 0.46  | 0.17  |
 
 You can refer to our evaluation script `train/eval.py` to evaluate your openfly-agent.
 
