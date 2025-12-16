@@ -552,7 +552,7 @@ def main():
         # Evaluate all data for current environment
         for idx, item in enumerate(eval_info):
             acts = []  # Reset action list
-            
+            data_num += 1
             pos_list = item['pos']
             text = item['gpt_instruction']
             start_postion = pos_list[0]
@@ -622,6 +622,7 @@ def main():
             if dis < 20:
                 env_bridge.success.append(1)
                 env_bridge.spl.append(env_bridge.traj_len / env_bridge.pass_len)
+                acc += 1
             else:
                 env_bridge.success.append(0)
                 env_bridge.spl.append(0)
