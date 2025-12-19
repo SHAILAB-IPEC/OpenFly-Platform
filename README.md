@@ -278,7 +278,7 @@ For ease of comparison, the evaluation results for each scene are shown in the t
 
 | Scene        | NE/m  | SR/%  | OSR/% | SPL/% |
 | ------------ | ----- | ----- | ----- | ----- |
-| airsim_16    | 80.3  | 0.42  | 0.572 | 0.172 |
+| airsim_16    | 178.9 | 0.10  | 0.579 | 0.083 |
 | airsim_18    | 77.4  | 0.394 | 0.655 | 0.27  |
 | airsim_26    | 113.9 | 0.307 | 0.559 | 0.152 |
 | airsim_gz    | 89.9  | 0.32  | 0.635 | 0.172 |
