@@ -89,5 +89,6 @@
         "adolcforward": "cpp",
         "specialfunctions": "cpp",
         "alignedvector3": "cpp"
-    }
+    },
+    "idf.pythonInstallPath": "/usr/bin/python3"
 }

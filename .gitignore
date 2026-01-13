@@ -18,3 +18,5 @@ extlibs/
 build/
 install/
 src/projects/*
+
+extlibs/*
